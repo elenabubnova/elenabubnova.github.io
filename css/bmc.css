@@ -1,0 +1,33 @@
+.bmc-btn {
+	position: relative;
+	height: 240px;
+	width: 240px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	border-radius: 50%;
+	border: none;
+	margin-top: 80px;
+	background-color: #0093C9;
+	color: white;
+}
+
+a .bmc-btn:hover {
+	opacity: 0.8;
+}
+
+
+@media only screen and (max-width: 800px) {
+	.bmc-btn  {
+		height: 180px;
+		width: 180px;
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.bmc-btn  {
+		height: 120px;
+		width: 120px;
+		font-size: 14px;
+	}
+}
