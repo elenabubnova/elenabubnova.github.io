@@ -1,0 +1,111 @@
+.chatbot-btn {
+	position: relative;
+	height: 280px;
+	width: 280px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	border-radius: 50%;
+	border: none;
+	margin-top: 80px;
+	background-color: #002B8F;
+	color: white;
+	margin-bottom: 60px;
+}
+
+a .chatbot-btn:hover {
+	opacity: 0.8;
+}
+
+/* chatbot animation */
+
+.chatbot {
+	animation:
+		fly 1.5s,
+		bounce 3s 0.1s infinite;
+		top: 150px;
+		left: 50px;
+	background-image: url("../assets/img/chatbot/chatbot.gif");
+	background-repeat: no-repeat;
+	background-size: 380px;
+	position: relative;
+	width: 380px;
+	height: 380px;
+	z-index: 1000;
+}
+
+@keyframes bounce {
+	0% {
+		top: 150px;
+		left: -60px;
+	}
+	50% {
+		top: 200px;
+		left: -60px;
+	}
+	100% {
+		top: 150px;
+		left: -60px;
+	}
+}
+
+/* chatbot animation */
+
+@media only screen and (max-width: 800px) {
+	.chatbot-btn  {
+		height: 200px;
+		width: 200px;
+		font-size: 18px;
+	}
+
+	.chatbot {
+		background-size: 250px;
+		width: 250px;
+		height: 250px;
+	}
+
+	@keyframes bounce {
+		0% {
+			top: 120px;
+			left: -40px;
+		}
+		50% {
+			top: 170px;
+			left: -40px;
+		}
+		100% {
+			top: 120px;
+			left: -40px;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.chatbot-btn  {
+		height: 140px;
+		width: 140px;
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	.chatbot {
+		background-size: 150px;
+		width: 150px;
+		height: 150px;
+
+	}
+
+	@keyframes bounce {
+		0% {
+			top: 130px;
+			left: -30px;
+		}
+		50% {
+			top: 150px;
+			left: -30px;
+		}
+		100% {
+			top: 130px;
+			left: -30px;
+		}
+	}
+}
