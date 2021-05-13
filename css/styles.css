@@ -149,25 +149,24 @@ a:hover {
 	margin: auto;
 }
 
-/* .portfolio-box:hover .img-fluid{
-	filter: blur(3px);
-	-webkit-filter: blur(3px);
-} */
+.portfolio-box {
+	display: flex;
+	margin: auto;
+}
 
 .portfolio-box-caption {
-	font-size: 16px;
 	display: flex;
+	position: absolute;
+	font-size: 16px;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	position: absolute;
 	bottom: 0;
 	text-align: center;
 	color: black;
 	background: var(--mint);
-	text-align: center;
 }
 
 .contur {
