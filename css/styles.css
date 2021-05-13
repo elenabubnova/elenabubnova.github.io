@@ -151,7 +151,7 @@ a:hover {
 
 .portfolio-box {
 	display: flex;
-	margin: auto;
+	position: relative;
 }
 
 .portfolio-box-caption {
