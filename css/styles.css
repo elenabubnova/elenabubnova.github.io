@@ -85,6 +85,7 @@ a:hover {
 	top: -100px;
 	right: 100px;
 	margin-top: 40px;
+	justify-content: center;
 	/* background-image: url("../assets/img/ava/ava.mp4");
 	background-size: 100%;
 	background-repeat: no-repeat;
