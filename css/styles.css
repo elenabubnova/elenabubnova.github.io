@@ -81,10 +81,9 @@ a:hover {
 }
 
 .ava {
-	position: absolute;
-	margin-top: 40px;
-	right: 100px;
-	justify-content: center;
+	display: flex;
+	justify-content: center; 
+	margin-top: 20px;
 	/* background-image: url("../assets/img/ava/ava.mp4");
 	background-size: 100%;
 	background-repeat: no-repeat;
