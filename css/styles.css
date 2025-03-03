@@ -113,8 +113,8 @@ a:hover {
 
 .ava {
     position: absolute;
-    right: 30px;
-    top: 40%; /* Moves the image vertically to the middle */
+    right: 130px;
+    top: 48%; /* Moves the image vertically to the middle */
     transform: translateY(-50%); /* Adjusts for perfect vertical centering */
 }
 
