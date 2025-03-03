@@ -91,30 +91,35 @@ a:hover {
 
 .info-block {
     display: flex;
-    align-items: center; /* Centers the image vertically with text */
-    justify-content: space-between; /* Keeps text on the left, image on the right */
-    gap: 40px; /* Adjusts spacing */
+    flex-direction: column; /* Stack items (content + skills) vertically */
     max-width: 1190px;
-    margin: auto;
-    line-height: 30px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
 }
 
 .text-block {
-    max-width: 600px; /* Ensures text doesn't stretch too wide */
-    flex: 1; /* Allows text to take up remaining space */
+    flex: 1;
 }
 
 .ava {
-    flex-shrink: 0; /* Prevents the image from shrinking */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-shrink: 0;
 }
 
 .ava img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+}
+
+.skills-block {
+    margin-top: 40px; /* Adds space between the text/avatar and skills */
 }
 
 .project-preview {
