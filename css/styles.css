@@ -116,7 +116,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    margin: auto; /* Remove any top margin */
+	margin-top: -5px;
     position: relative; /* Keep it within its container */
 }
 
