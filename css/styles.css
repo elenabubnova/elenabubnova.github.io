@@ -112,10 +112,9 @@ a:hover {
 }
 
 .ava {
-    position: absolute;
-    right: 0;
-    top: 50%; /* Moves the image vertically to the middle */
-    transform: translateY(-50%); /* Adjusts for perfect vertical centering */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
 
 .ava img {
