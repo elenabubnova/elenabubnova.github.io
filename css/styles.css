@@ -118,6 +118,8 @@ a:hover {
     flex-shrink: 0;
 	margin-top: -5px;
     position: relative; /* Keep it within its container */
+	 margin-top: -10px; /* Moves the image up */
+  margin-left: -40px; /* Moves the image left */
 }
 
 .ava img {
