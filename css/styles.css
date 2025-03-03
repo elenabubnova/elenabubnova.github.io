@@ -80,17 +80,6 @@ a:hover {
 	line-height: 35px;
 }
 
-.ava {
-	display: absolute;
-	justify-content: center; 
-	margin-top: 20px;
-	/* background-image: url("../assets/img/ava/ava.mp4");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	height: 430px;
-	width: 210px; */
-	z-index: 10;
-}
 
 .white-link {
 	color: var(--white-grey);
@@ -101,10 +90,31 @@ a:hover {
 }
 
 .info-block {
-	position: relative;
-	max-width: 1190px;
-	margin: auto;
-	line-height: 30px;
+    display: flex;
+    align-items: center; /* Centers the image vertically with text */
+    justify-content: space-between; /* Keeps text on the left, image on the right */
+    gap: 40px; /* Adjusts spacing */
+    max-width: 1190px;
+    margin: auto;
+    line-height: 30px;
+}
+
+.text-block {
+    max-width: 600px; /* Ensures text doesn't stretch too wide */
+    flex: 1; /* Allows text to take up remaining space */
+}
+
+.ava {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ava img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
 
 .project-preview {
