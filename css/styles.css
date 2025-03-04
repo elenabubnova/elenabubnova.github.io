@@ -285,15 +285,27 @@ a:hover {
 	transition: visibility 0s 0.7s, opacity 0.7s ease;
 }
 
+.header-project-text {
+	align-items: flex-start;
+	padding: 80px;
+}
+
 /* ------------------------------------ end of projects block ------------------------------------ */
 
 @media only screen and (max-width: 1000px) {
 	.ava {
 		right: 0px;
 	}
+
+	.header-project-text {
+		flex-direction: column;
+		padding: 80px;
+	}
 }
 
 @media only screen and (max-width: 800px) {
+
+
 
 	.section-1 {
 		background-color: var(--black-grey);
@@ -326,6 +338,11 @@ a:hover {
 
 	.header-main {
 		margin-bottom: 60px;
+	}
+
+	.header-project-text {
+		flex-direction: column;
+		padding-bottom: 80px;
 	}
 }
 
