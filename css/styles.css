@@ -4,7 +4,24 @@
 	--white-grey: #e2e2e2;
 	--white-black: #888888;
 	--mint: #bf18d1;
+	--text-project-grey: #434343;
 }
+
+.text-project-grey{
+	color: var(--text-project-grey);
+}
+
+.text-block-project-color-chatbot {
+	background-color: #E8EBF0;
+}
+
+.inter-text-400 {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	/* font-optical-sizing: auto; */
+	font-weight: 400;
+	font-style: normal;
+  }
 
 body {
 	margin: 0;
@@ -80,7 +97,6 @@ a:hover {
 	line-height: 35px;
 }
 
-
 .white-link {
 	color: var(--white-grey);
 }
@@ -91,7 +107,7 @@ a:hover {
 
 .info-block {
     display: flex;
-    flex-direction: column; /* Stack items (content + skills) vertically */
+    flex-direction: column;
     max-width: 1190px;
     margin: 0 auto;
 }
@@ -104,6 +120,63 @@ a:hover {
     gap: 40px;
 }
 
+.image-container-project {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/* background: white; */
+	padding-top: 20px;
+	gap: 40px;
+}
+
+.image-container-project-reverse {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/* background: white; */
+	padding-top: 20px;
+	gap: 40px;
+}
+
+.image {
+	flex: 1;
+}
+
+.image-long-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-long-page-item {
+	width: 700px;
+}
+
+.image-project img {
+	width: 100%;
+	height: auto;
+}
+
+.text-project {
+	flex: 1;
+	text-align: left;
+	min-width: 50%;
+}
+
+.text-project-35 {
+	flex: 1;
+	text-align: left;
+	min-width: 35%;
+}
+
+.text-block-project {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 310px;
+}
+
 .text-block {
     flex: 1;
 	display: flex;
@@ -111,12 +184,11 @@ a:hover {
     justify-content: center;
 }
 
-.ava {
-	/* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-shrink: 0; */
+.img-shadow {
+	box-shadow: 0px 0px 40px 0px rgba(26, 65, 255, 0.20);
+}
 
+.ava {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -133,7 +205,7 @@ a:hover {
 }
 
 .skills-block {
-    margin-top: 40px; /* Adds space between the text/avatar and skills */
+    margin-top: 40px;
 }
 
 .project-preview {
@@ -228,12 +300,24 @@ a:hover {
 		color: var(--white-grey);
 		padding: 0 40px 20px 40px;
 	}
-	/* .ava {
-		opacity: 0;
-	} */
+
 	.content-wrapper {
 		flex-direction: column-reverse;
 		align-items: center;
+	}
+
+	.image-container-project-reverse {
+		flex-direction: column-reverse;
+		text-align: center;
+		padding-top: 60px;
+		gap: 0px;
+	}
+
+	.image-container-project {
+		flex-direction: column;
+		text-align: center;
+		padding-top: 60px;
+		gap: 0px;
 	}
 
 	.paragraph-text-margin-bottom {
@@ -262,11 +346,14 @@ a:hover {
 		margin: auto;
 		padding: 0;
 	}
+
 	.section-3 {
 		padding-bottom: 0px;
 	}
+
 	.content-wrapper {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
+
 }
