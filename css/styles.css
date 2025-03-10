@@ -18,7 +18,6 @@
 .inter-text-400 {
 	font-family: "Inter", sans-serif;
 	font-size: 14px;
-	/* font-optical-sizing: auto; */
 	font-weight: 400;
 	font-style: normal;
   }
@@ -120,13 +119,22 @@ a:hover {
     gap: 40px;
 }
 
+.image-container-project-one-column {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 20px;
+	gap: 40px;
+}
+
+
 .image-container-project {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	/* background: white; */
-	padding-top: 20px;
+	/* padding: 40px; */
 	gap: 40px;
 }
 
@@ -135,7 +143,6 @@ a:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	/* background: white; */
 	padding-top: 20px;
 	gap: 40px;
 }
@@ -163,6 +170,11 @@ a:hover {
 	flex: 1;
 	text-align: left;
 	min-width: 50%;
+}
+.text-project-one-column {
+	flex: 1;
+	text-align: left;
+	max-width: 60%;;
 }
 
 .text-project-35 {
@@ -293,20 +305,37 @@ a:hover {
 /* ------------------------------------ end of projects block ------------------------------------ */
 
 @media only screen and (max-width: 1000px) {
+
+	.text-project-one-column {
+		max-width: 80%;;
+	}
+
 	.ava {
 		right: 0px;
 	}
 
 	.header-project-text {
 		flex-direction: column;
-		padding: 80px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
 
 @media only screen and (max-width: 800px) {
 
+	h4 {
+		margin-bottom: 40px; 
+	}
 
+	.text-project-one-column {
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
 
+	.text-block-project {
+		max-width: 100%;
+		padding-bottom: 40px;
+	}
 	.section-1 {
 		background-color: var(--black-grey);
 		color: var(--white-grey);
@@ -329,12 +358,18 @@ a:hover {
 		flex-direction: column;
 		text-align: center;
 		padding-top: 60px;
+		padding-left: 40px;
+		padding-right: 40px;
 		gap: 0px;
 	}
 
-	.paragraph-text-margin-bottom {
-		margin-bottom: 80px;
+	.image-container-project-trust-site {
+		gap: 20px;
 	}
+
+	/* .paragraph-text-margin-bottom {
+		margin-bottom: 80px;
+	} */
 
 	.header-main {
 		margin-bottom: 60px;
@@ -347,6 +382,8 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+
+	
 
 	.data-info {
 		font-size: 14px;
