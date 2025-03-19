@@ -138,12 +138,24 @@ a:hover {
 	gap: 40px;
 }
 
+.image-container-project-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	/* padding: 40px; */
+	gap: 40px;
+}
+
 .image-container-project-reverse {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding-top: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
 	gap: 40px;
 }
 
@@ -155,6 +167,14 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.image-long-page-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 80px;
 }
 
 .image-long-page-item {
@@ -256,7 +276,21 @@ a:hover {
 	position: static;
 }
 
+.video-container {
+	position: relative;
+	width: 100%;
+	max-width: 600px; /* Adjust max width as needed */
+	margin: auto; /* Center the video */
+}
+
+video {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 /* ------------------------------------ projects block ------------------------------------ */
+
 #portfolio {
 	max-width: 1440px;
 	margin: auto;
@@ -332,10 +366,10 @@ a:hover {
 		margin-bottom: 20px;
 	}
 
-	.text-block-project {
-		max-width: 100%;
+	/* .text-block-project {
 		padding-bottom: 40px;
-	}
+		max-width: 100%;
+	} */
 	.section-1 {
 		background-color: var(--black-grey);
 		color: var(--white-grey);
@@ -382,8 +416,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-
-	
 
 	.data-info {
 		font-size: 14px;
