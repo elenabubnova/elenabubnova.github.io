@@ -67,7 +67,7 @@ a:hover {
 .section-1 {
 	background-color: var(--black-grey);
 	color: var(--white-grey);
-	padding: 0 40px 120px 40px;
+	padding: 0 40px 0px 40px;
 }
 
 .section-2 {
@@ -81,12 +81,22 @@ a:hover {
 
 .section-3 {
 	background-color: var(--black-grey);
-	padding-bottom: 80px;
+	padding-bottom: 0px;
 }
 
 .section-desc {
 	color: var(--black-grey);
 	padding: 0 40px 40px 40px;
+}
+
+.section-skills-name {
+	background-color: var(--black-grey);
+	color: var(--white-grey);
+	padding: 20px 28px 20px 28px;
+}
+
+.product-margin-bottom {
+	margin-bottom: 40px;
 }
 
 .logo {
@@ -134,7 +144,6 @@ a:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	/* padding: 40px; */
 	gap: 40px;
 }
 
@@ -144,7 +153,6 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	/* padding: 40px; */
 	gap: 40px;
 }
 
@@ -157,6 +165,10 @@ a:hover {
 	padding-right: 40px;
 	padding-left: 40px;
 	gap: 40px;
+}
+
+#product-design-section, #ui-ux-section, #visual-design-section {
+    scroll-margin-top: 20px;
 }
 
 .image {
