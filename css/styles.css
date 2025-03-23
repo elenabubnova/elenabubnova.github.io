@@ -7,7 +7,7 @@
 	--text-project-grey: #434343;
 }
 
-.text-project-grey{
+.text-project-grey {
 	color: var(--text-project-grey);
 }
 
@@ -20,7 +20,7 @@
 	font-size: 14px;
 	font-weight: 400;
 	font-style: normal;
-  }
+}
 
 body {
 	margin: 0;
@@ -115,18 +115,18 @@ a:hover {
 }
 
 .info-block {
-    display: flex;
-    flex-direction: column;
-    max-width: 1190px;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 1190px;
+	margin: 0 auto;
 }
 
 .content-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: left;
-    gap: 40px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	text-align: left;
+	gap: 40px;
 }
 
 .image-container-project-one-column {
@@ -167,8 +167,10 @@ a:hover {
 	gap: 40px;
 }
 
-#product-design-section, #ui-ux-section, #visual-design-section {
-    scroll-margin-top: 20px;
+#product-design-section,
+#ui-ux-section,
+#visual-design-section {
+	scroll-margin-top: 20px;
 }
 
 .image {
@@ -193,9 +195,20 @@ a:hover {
 	width: 700px;
 }
 
-.image-project img {
+img {
+	flex: 1;
 	width: 100%;
 	height: auto;
+}
+
+.image-project {
+	flex: 1;
+	width: 100%;
+	height: auto;
+}
+
+.image-project-flex-initial {
+	flex: initial;
 }
 
 .text-project {
@@ -207,7 +220,8 @@ a:hover {
 .text-project-one-column {
 	flex: 1;
 	text-align: left;
-	max-width: 60%;;
+	max-width: 60%;
+	;
 }
 
 .text-project-35 {
@@ -223,10 +237,10 @@ a:hover {
 }
 
 .text-block {
-    flex: 1;
+	flex: 1;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .img-shadow {
@@ -243,14 +257,21 @@ a:hover {
 }
 
 .ava img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
 	display: block;
 }
 
+/* custom for narrow  */
+.image-height-600 {
+	flex: 1;
+	max-height: 600px;
+	width: auto;
+}
+
 .skills-block {
-    margin-top: 40px;
+	margin-top: 40px;
 }
 
 .project-preview {
@@ -292,8 +313,10 @@ a:hover {
 .video-container {
 	position: relative;
 	width: 100%;
-	max-width: 600px; /* Adjust max width as needed */
-	margin: auto; /* Center the video */
+	max-width: 600px;
+	/* Adjust max width as needed */
+	margin: auto;
+	/* Center the video */
 }
 
 video {
@@ -301,6 +324,27 @@ video {
 	height: auto;
 	display: block;
 }
+
+
+
+.light-text {
+	font-weight: 300;
+	/* Light */
+}
+
+.normal-text {
+	font-weight: 400;
+	/* Regular (default) */
+}
+
+.bold-text {
+	font-weight: 700;
+	/* Bold */
+}
+
+.bold-number::marker {
+	font-weight: 700;
+  }
 
 /* ------------------------------------ projects block ------------------------------------ */
 
@@ -338,6 +382,7 @@ video {
 	opacity: 0.9;
 	transition: opacity 0.7s ease;
 }
+
 .hidden {
 	visibility: hidden;
 	opacity: 0;
@@ -354,7 +399,8 @@ video {
 @media only screen and (max-width: 1000px) {
 
 	.text-project-one-column {
-		max-width: 80%;;
+		max-width: 80%;
+		;
 	}
 
 	.ava {
@@ -371,7 +417,7 @@ video {
 @media only screen and (max-width: 800px) {
 
 	h4 {
-		margin-bottom: 40px; 
+		margin-bottom: 40px;
 	}
 
 	.text-project-one-column {
