@@ -1,0 +1,41 @@
+img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    flex: 1;
+}
+
+.img-shadow {
+	box-shadow: 0px 0px 40px 0px rgba(26, 65, 255, 0.20);
+}
+
+.image-long-page-item {
+	width: 700px;
+}
+
+.image-project {
+	flex: 1;
+	width: 100%;
+	height: auto;
+}
+
+.image-project-flex-initial {
+	flex: initial;
+}
+
+.image-long-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-long-page-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 80px;
+}
