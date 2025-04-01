@@ -97,6 +97,10 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.image-filter-shadow {
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+  }
+
 /* Card container */
 .card {
     display: flex;
@@ -218,5 +222,5 @@ h1 {
 
     .text-block-small-m-top {
         margin-top: 1rem;
-    }
+    }   
 }
