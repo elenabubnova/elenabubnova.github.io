@@ -137,6 +137,16 @@ h1 {
     margin-right: 1rem;
 }
 
+.img-70 {
+    max-height: 400px !important;
+    width: auto;
+}
+
+.phonebox {
+    border-radius: 2rem; /* Top-left, top-right, bottom-right, bottom-left */
+  }
+
+
 /* Small Screens (≥768px) */
 @media only screen and (min-width: 48rem) {
 
@@ -155,6 +165,14 @@ h1 {
     .project-body-90 {
         width: 100%;
     }
+
+    .img-70 {
+        max-height: 550px !important;
+        width: auto;
+    }
+    .phonebox {
+        border-radius: 2.8rem; /* Top-left, top-right, bottom-right, bottom-left */
+      }
 
 }
 
@@ -185,6 +203,16 @@ h1 {
     .text-block-small-m-top {
         margin-top: 1rem;
     }
+
+    .img-70 {
+        max-height: 550px !important;
+        width: auto;
+    }
+
+    .phonebox {
+        border-radius: 2.8rem; /* Top-left, top-right, bottom-right, bottom-left */
+      }
+
 
 }
 
@@ -226,9 +254,4 @@ h1 {
         margin-top: 1rem;
     }
     
-}
-
-.img-70 {
-    max-height: 500px !important;
-    width: auto;
 }
