@@ -7,6 +7,8 @@ img {
     vertical-align: bottom;
 }
 
+
+
 p {
     font-size: 1rem;
     margin-bottom: 0.5rem !important;
@@ -222,5 +224,11 @@ h1 {
 
     .text-block-small-m-top {
         margin-top: 1rem;
-    }   
+    }
+    
+}
+
+.img-70 {
+    max-height: 500px !important;
+    width: auto;
 }
