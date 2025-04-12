@@ -67,6 +67,10 @@ h1 {
     font-size: min(1.2vw, 24px);
 }
 
+.row-two-photos-align-end {
+    align-items: end;
+}
+
 .project-body {
     max-width: 1140px;
     margin-left: auto;
