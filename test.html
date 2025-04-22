@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: black;
+            overflow: hidden;
+            font-family: monospace;
+            color: rgba(255, 255, 255, 0.339);
+            perspective: 800px;
+        }
+        .letter {
+            position: absolute;
+            opacity: 0.1;
+            transform-origin: center;
+            animation: starWarsScroll linear infinite;
+        }
+        @keyframes starWarsScroll {
+            0% {
+                transform: translate3d(0, 100vh, -500px) scale(4) rotateX(0deg);
+                opacity: 0.2;
+            }
+            50% {
+                transform: translate3d(10vw, 50vh, -200px) scale(6) rotateX(30deg);
+                opacity: 0.2;
+            }
+            100% {
+                transform: translate3d(-10vw, -100px, 500px) scale(8) rotateX(60deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const numLetters = 5;
+        const alphabet = 'ASDFGHJKL:1';
+        
+        for (let i = 0; i < numLetters; i++) {
+            let span = document.createElement("span");
+            span.textContent = alphabet[Math.floor(Math.random() * alphabet.length)];
+            span.classList.add("letter");
+            span.style.left = Math.random() * window.innerWidth + "px";
+            span.style.fontSize = (80 + Math.random() * 200) + "px";
+            span.style.animationDuration = (5 + Math.random() * 10) + "s";
+            document.body.appendChild(span);
+        }
+    </script>
+</body>
+</html>
