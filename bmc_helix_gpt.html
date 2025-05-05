@@ -4,13 +4,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
 		<title>Elena Bubnova</title>
 		
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon_io/favicon.ico" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"> -->
+		<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/toggle_switch.css" />
+		
 
 
 		<link rel="stylesheet" href="css/bmc_self_guided_demo.css" />
@@ -26,9 +29,15 @@
 	</head>
 	
 	<body>
+		<header>
+			<div id="header-main" class="mx-10 mt-10 flex justify-between header header-white mb-[120px]"></div>
+		</header>
+
 		<section class="section-desc">
 			<div class="header header-white"></div>
 		</section>
+
+		<div id="chat-ai"></div>
 
 	<section class="wrapper">
 		<section class="project-summary">
@@ -255,6 +264,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/ui.js"></script>
+	<script src="js/chat.js"></script>
 </body>
 
 </html>

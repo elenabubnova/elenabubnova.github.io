@@ -12,50 +12,135 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" /> -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet" /> -->
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/styles.css" />
 
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 
+
+	<!-- <style>
+		/* body { font-family: Arial; padding: 20px; max-width: 600px; margin: auto; } */
+		#chat {
+			border: 1px solid #cccccc0a;
+			padding: 10px;
+			height: 300px;
+			overflow-y: auto;
+			margin-bottom: 10px;
+		}
+
+		.user {
+			color: blue;
+			margin-bottom: 5px;
+		}
+
+		.bot {
+			color: green;
+			margin-bottom: 10px;
+		}
+	</style> -->
+
 </head>
 
-<body>
-	<div class="background">
-		<section class="section-1">
+<body class="bg-black">
 
-			<div class="header header-black header-main"></div>
 
-			<section class="flex flex-col max-w-[1190px] mx-auto"">
-				<div class=" content-wrapper">
-				<div class="text-block text-16-light">
-					<section class="paragraph-text-margin-bottom">
-						<h2 class="text-3xl font-bold mb-2">Hello</h2>
+	<header class="w-full">
+		<div id="header-main" class="mx-10 mt-10 flex justify-between header header-black mb-[120px]">
+		</div>
+	</header>
+
+	<div id="chat-ai"></div>
+
+
+	<!-- <section class="text-white px-10">
+		<div class="flex flex-col max-w-[1190px] mx-auto"">
+			
+			<div class=" content-wrapper">
+			<div class="text-block">
+				<div class="paragraph-text-margin-bottom">
+					<h2 class="text-3xl font-bold mb-2">Hello</h2>
+					<p>
 						I'm a multidisciplinary Product / UX/UI / Visual / Brand
 						Designer. I&nbspenjoy solving challenges and helping various
 						companies to drive their business by building and improving
 						clean and elegant end-to-end experiences for the user. I'm
 						always consistently looking for the balance between customer
 						needs and business goals.
-					</section>
-					<section>
+					</p>
+				</div>
+				<div>
+					<h2 class="text-3xl font-bold mb-2">Skills</h2>
+					<a class="underline hover:text-fuchsia-600" href="./index.html#product-design-section">Product
+						Design</a><br />
+					<a class="underline hover:text-fuchsia-600" href="./index.html#ui-ux-section">Web /
+						UI/UX</a><br />
+					<a class="underline hover:text-fuchsia-600" href="./index.html#visual-design-section">Visual
+						Design</a>
+				</div>
+			</div>
+			<div class="ava">
+				<img src="./assets/img/ava/avatar.webp" width="300" height="300" alt="avatar" />
+			</div>
+		</div>
+	</section> -->
+
+	<section class="text-white px-10 mb-[120px]">
+		<div class="flex flex-col max-w-[1190px] mx-auto">
+
+			<!-- Flex layout: image on top on mobile, side-by-side on desktop -->
+			<div class="flex flex-col-reverse md:flex-row items-center md:items-start md:justify-center gap-10">
+
+				<!-- Text Block (50%) -->
+				<div class="md:basis-2/5 space-y-8 md:justify-center max-w-full md:max-w-[600px]">
+					<!-- Intro -->
+					<div class="mb-[120px]">
+						<h2 class="text-3xl font-bold mb-2">Hello</h2>
+						<p class="leading-loose">
+							I'm a multidisciplinary Product / UX/UI / Visual / Brand Designer.
+							I&nbsp;enjoy solving challenges and helping various companies to
+							drive their business by building and improving clean and elegant
+							end-to-end experiences for the user. I'm always consistently looking
+							for the balance between customer needs and business goals.
+						</p>
+					</div>
+
+					<!-- Skills -->
+					<div>
 						<h2 class="text-3xl font-bold mb-2">Skills</h2>
-						<a class="underline hover:text-fuchsia-600" href="./index.html#product-design-section">Product
-							Design</a><br />
-						<a class="underline hover:text-fuchsia-600" href="./index.html#ui-ux-section">Web /
-							UI/UX</a><br />
-						<a class="underline hover:text-fuchsia-600" href="./index.html#visual-design-section">Visual
-							Design</a>
-					</section>
+						<div class="space-y-1 leading-loose">
+							<a class="underline hover:text-fuchsia-600" href="./index.html#product-design-section">
+								Product Design
+							</a><br />
+							<a class="underline hover:text-fuchsia-600" href="./index.html#ui-ux-section">
+								Web / UI/UX
+							</a><br />
+							<a class="underline hover:text-fuchsia-600" href="./index.html#visual-design-section">
+								Visual Design
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="ava">
-					<img src="./assets/img/ava/avatar.webp" width="300" height="300" alt="avatar" />
+
+				<!-- Avatar (50%) -->
+				<div class="md:basis-3/5 md:mb-6">
+					<img src="./assets/img/ava/avatar.webp" alt="avatar" class=" mx-auto  w-[300px] h-[300px]" />
+
+					<!-- <div>
+				<div id="chat"></div>
+				<input type="text" id="userInput" placeholder="Ask something..." style="width: 80%;">
+				<button  style="color: white;" onclick="sendMessage()">Send</button>
+			  </div> -->
 				</div>
-	</div>
+			</div>
+		</div>
 	</section>
 
-	</section>
+
+
 
 	<section class="bg-black py-10 px-4 sm:px-6 lg:px-8 text-white">
 		<div id="portfolio" class="space-y-5">
@@ -349,6 +434,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/ui.js"></script>
+	<script src="js/chat.js"></script>
 </body>
 
 </html>

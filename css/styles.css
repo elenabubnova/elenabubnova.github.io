@@ -9,19 +9,13 @@
 
 
 body {
-	margin: 0;
-	padding: 0;
-	margin-block-start: 0;
-	margin-block-end: 0;
-	font-family: "Inter", sans-serif;
-	font-size: 1rem;
-	color: black;
+	font-family: "Roboto", sans-serif;
 }
 
-h1 {
+/* h1 {
 	font-size:2.8rem;
     font-weight: 700 !important;
-}
+} */
 
 h2 {
 	font-size: 2.2rem;
@@ -44,13 +38,97 @@ a {
 	font-weight: 700;
 }
 
-p {
+
+
+/* AI */
+
+#chatIcon {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	/* background: #3498db; */
+	color: white;
+	padding: 15px;
+	/* border-radius: 50%; */
+	font-size: 24px;
+	cursor: pointer;
+	/* box-shadow: 0 2px 10px rgba(0,0,0,0.2); */
+	z-index: 999;
+  }
+  
+  #chatPopup {
+	display: none;
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	width: 300px;
+	background: #fff;
+	border-radius: 10px;
+	/* box-shadow: 0 2px 20px rgba(0,0,0,0.2); */
+	padding: 15px;
+	z-index: 1000;
+	/* font-family: sans-serif; */
+  }
+  
+  #chatHeader {
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  #chat {
+	max-height: 250px;
+	overflow-y: auto;
+	/* margin-bottom: 10px; */
+	/* border: 1px solid #ddd; */
+	padding: 5px;
+	border-radius: 6px;
+  }
+  
+  .preprompts button {
+	/* margin: 5px 5px 5px 0; */
+	/* padding: 5px 5px; */
+	/* background-color: #ecf0f1; */
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+
+  .preprompts button:hover {
+	background-color: #d0d3d4;
+  }
+
+  /* .user { color: blue; margin-bottom: 5px; }
+  .bot { color: green; margin-bottom: 10px; } */
+
+  /* AI */
+
+.preprompts {
+	margin: 10px 0;
+	padding: 10px;
+	background: #f4f4f4;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+  }
+  .preprompts button {
+	padding: 6px 12px;
+	background-color: #dfe6e9;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .preprompts button:hover {
+	background-color: #b2bec3;
+  }
+
+/* p {
 	margin: 0;
 	padding: 0;
 	font-size: 1rem;
 	font-weight: 400;
 	margin-bottom: 0.5rem !important;
-}
+} */
 
 
 /* a:hover {
@@ -66,7 +144,7 @@ ul, ol {
 }
 
 
-.header {
+/* .header {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1440px;
@@ -76,7 +154,7 @@ ul, ol {
 
 .header-main {
 	margin-bottom: 100px;
-}
+} */
 
 .data-info {
 	display: block;
@@ -128,13 +206,13 @@ ul, ol {
 	line-height: 35px;
 }
 
-.white-link {
+/* .white-link {
 	color: var(--white-grey);
 }
 
 .black-link {
 	color: var(--black-grey);
-}
+} */
 
 .info-block {
 	display: flex;
@@ -247,11 +325,11 @@ img {
 	;
 }
 
-.text-project-35 {
+/* .text-project-35 {
 	flex: 1;
 	text-align: left;
 	min-width: 35%;
-}
+} */
 
 .text-block-project {
 	margin-left: auto;

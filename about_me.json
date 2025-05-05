@@ -1,0 +1,20 @@
+{
+    "name": "Elena",
+    "age": "No way =)",
+    "location": "California",
+    "profession": "Product Designer",
+    "skills": [
+        "Python",
+        "React",
+        "AI",
+        "Web Development"
+    ],
+    "hobbies": [
+        "Cats",
+        "Gardning",
+        "Traveling"
+    ],
+    "bio": "I’m a product designer with a strong background in AI-integrated UX/UI design. I specialize in creating user-centered experiences for complex systems, particularly in SaaS and tech environments. I’ve worked across industries, including automotive and telecommunication, where I’ve focused on designing intuitive, accessible solutions that cater to both business needs and user goals. I’m passionate about blending innovation with practicality, and I thrive in cross-functional teams where I can collaborate with engineers, product managers, and stakeholders. ",
+    "favorite color": "black",
+    "": ""  
+}
