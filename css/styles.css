@@ -97,15 +97,12 @@ a {
 	background-color: #d0d3d4;
   }
 
-  /* .user { color: blue; margin-bottom: 5px; }
-  .bot { color: green; margin-bottom: 10px; } */
-
   /* AI */
 
 .preprompts {
 	margin: 10px 0;
-	padding: 10px;
-	background: #f4f4f4;
+	/* padding: 10px; */
+	/* background: #f4f4f4; */
 	border-radius: 10px;
 	display: flex;
 	flex-wrap: wrap;
@@ -113,13 +110,13 @@ a {
   }
   .preprompts button {
 	padding: 6px 12px;
-	background-color: #dfe6e9;
+	background-color:rgb(239, 239, 239);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
   }
   .preprompts button:hover {
-	background-color: #b2bec3;
+	background-color:rgb(198, 198, 198);
   }
 
 /* p {
@@ -596,3 +593,12 @@ video {
 	}
 
 }
+
+
+
+
+/* tailwind */
+
+.heading-h1-title {
+	@apply font-semibold text-4xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }

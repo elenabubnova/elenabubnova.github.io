@@ -27,7 +27,7 @@ const $chatBlock = $(`
 	</div>
 
 	<!-- Chat Popup -->
-	<div id="chatPopup">
+	<div id="chatPopup" class="rounded-full shadow-lg transition duration-200">
 
 	<div id="chatHeader">Ask About Elena <span onclick="togglePopup()" style="float:right; cursor:pointer;">
 		<i class="fa fa-times fa-lg" aria-hidden="true"></i>
@@ -40,18 +40,20 @@ const $chatBlock = $(`
 	<div id="preprompts" class="preprompts"></div>
 
 	<div class="flex items-center gap-3 w-full max-w-xl mx-auto">
-	<input
-	id="userInput"
-	type="text"
-	placeholder="..."
-	class="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-fuchsia-600 focus:border-transparent shadow-sm transition duration-200"
-	/>
-	<button
-	class="w-12 h-12 flex items-center justify-center bg-black hover:bg-fuchsia-600 text-white rounded-full shadow-lg transition duration-200"
-	onclick="sendMessage()"
-	>
-	<i class="fa fa-paw text-lg" aria-hidden="true"></i>
-	</button>
+
+		<input
+		id="userInput"
+		type="text"
+		placeholder="..."
+		class="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-fuchsia-600 focus:border-transparent shadow-sm transition duration-200"
+		/>
+		
+		<button
+			class="w-12 h-12 flex items-center justify-center bg-black hover:bg-fuchsia-600 text-white rounded-full shadow-lg transition duration-200"
+			onclick="sendMessage()"
+		>
+		<i class="fa fa-paw text-lg" aria-hidden="true"></i>
+		</button>
 	</div>
 	</div>
 `)

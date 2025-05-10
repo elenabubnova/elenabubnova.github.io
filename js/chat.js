@@ -1,9 +1,7 @@
-const apiKey = "AIzaSyCBW0Y9lzHYHMxttPoRZHYeEN07XX8rm4M";
+const apiKey = "AIzaSyCBW0Y9lzHYHMxttPoRZHYeEN07XX8rm4M"; // dont forget to put into .env !!!!!!!!!!!!!!!!!!!!!
 let aboutMeData = null;
 const chat = document.getElementById("chat");
 
-// API key — replace with a secure method in production
-// const apiKey = "YOUR_API_KEY"; // <- Replace with your real key
 
 async function loadAboutMe() {
     const res = await fetch("about_me.json");
@@ -29,9 +27,8 @@ async function sendMessage() {
     });
 
     const data = await response.json();
-    // console.log(data);
     const botReply = data.candidates?.[0]?.content?.parts?.[0]?.text || "Sorry, I couldn't answer that.";
-    addMessage("ElenaAI", botReply, "bot");
+    addMessage("CatBot", botReply, "bot");
 }
 
 
@@ -40,6 +37,7 @@ function addMessage(sender, text, cls) {
     msg.className = cls === "user"
       ? "text-black font-bold mb-1"
       : "text-black mb-2.5";
+
     // Create bold sender element
     const senderEl = document.createElement("span");
     senderEl.className = "font-bold";
@@ -91,3 +89,11 @@ window.onload = () => {
     loadAboutMe();
     showPrepromptsInChat();
 };
+
+
+document.getElementById("userInput").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault(); 
+      sendMessage(); 
+    }
+  });
