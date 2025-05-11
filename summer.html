@@ -2,53 +2,63 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon_io/favicon.ico" />
+	<meta charset="UTF-8" />
 	<title>Elena Bubnova</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/toggle_switch.css">
-	<link rel="stylesheet" href="css/add_space_after.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon_io/favicon.ico" />
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
-	<script src="./js/switch_image.js"></script>
 </head>
 
 <body>
+	<header>
+		<div id="header-main" class="mx-10 mt-10 flex justify-between header header-white mb-[120px]"></div>
+	</header>
+
 	<section class="section-desc">
 		<div class="header header-white"></div>
 	</section>
 
-	<section class="project-preview">
-		<div class="row no-gutters">
-			<div class="col-lg-12">
+	<div id="chat-ai"></div>
 
-				<section class="image-container-project-one-column header-project-text">
-					<div class="text-project-grey text-project-one-column">
-						<h2>Summer</h2>
-						<h4>Project management tool for monitoring the design team’s workload, statistics, and completion results.
-						</h4>
-						<hr style="border: none; height: 20px;">
-						<h6>My Role</h6>
-						<p>Lead Product Designer</p>
-					</div>
-				</section>
+	<section
+		class="flex px-10 flex-col w-full max-w-full lg:max-w-[840px] mx-auto transition-all duration-100 ease-in-out">
+		<section class="max-w-[640px] mb-[120px]">
+			<h1 class="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-5">
+				Summer
+			</h1>
+			<div class="w-full sm:w-8/12 md:w-8/12 lg:w-6/12">
+				<p class="mb-10">My Role: Lead Product Designer</p>
+				<p>Project management tool for monitoring the design team’s workload, statistics, and completion
+					results.</p>
+			</div>
+		</section>
+	</section>
 
-				<img class="img-fluid" src="assets/img/summer/01_summer.jpg" alt="" loading="lazy">
-				<img class="img-fluid" src="assets/img/summer/02_summer.jpg" alt="" loading="lazy">
-				<img class="img-fluid" src="assets/img/summer/03_summer.jpg" alt="" loading="lazy">
-				<img class="img-fluid" src="assets/img/summer/04_summer.jpg" alt="" loading="lazy">
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[1400px] mx-auto transition-all duration-100 ease-in-out">
+		<img class="img-fluid" src="assets/img/summer/01_summer.jpg" alt="" loading="lazy">
+		<img class="img-fluid" src="assets/img/summer/02_summer.jpg" alt="" loading="lazy">
+		<img class="img-fluid" src="assets/img/summer/03_summer.jpg" alt="" loading="lazy">
+		<img class="img-fluid" src="assets/img/summer/04_summer.jpg" alt="" loading="lazy">
+	</section>
 
-				<footer class="section-2">
-					<a class="black-link" href="./index.html#portfolio">To projects ></a>
-				</footer>
+	<footer class="section-2">
+		<a class="hover:text-fuchsia-600 underline" href="./index.html#portfolio">To projects ></a>
+	</footer>
 
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-				<script src="js/scripts.js"></script>
-				<script src="js/ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/chat.js"></script>
 </body>
 
 </html>

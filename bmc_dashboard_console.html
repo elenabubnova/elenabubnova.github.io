@@ -3,20 +3,18 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Elena Bubnova</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.tailwindcss.com"></script>
+
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon_io/favicon.ico" />
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/toggle_switch.css" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-	<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" />
-
-	<link rel="stylesheet" href="css/bmc_self_guided_demo.css" />
-	<link rel="stylesheet" href="css/toggle_switch.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
@@ -25,206 +23,188 @@
 </head>
 
 <body>
+	<header>
+		<div id="header-main" class="mx-10 mt-10 flex justify-between header header-white mb-[120px]"></div>
+	</header>
+
 	<section class="section-desc">
 		<div class="header header-white"></div>
 	</section>
 
-	<section class="wrapper">
-		<section class="project-summary">
-			<h1>BMC ITSM Dashboards<br />Improving web experience</h1>
-			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6">
+	<div id="chat-ai"></div>
+
+	<section
+		class="flex px-10 flex-col w-full max-w-full lg:max-w-[840px] mx-auto transition-all duration-100 ease-in-out">
+
+		<section class="max-w-[640px] mb-[120px]">
+			<h1 class="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-5">
+				BMC ITSM Dashboards<br />Improving web experience
+			</h1>
+			<div class="w-full sm:w-8/12 md:w-8/12 lg:w-6/12">
 				<p>My Role: Lead Product Designer</p>
 			</div>
 		</section>
 
-		<section class="project-body">
-			<div class="row no-gutter">
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 text-block-small-m-top">
-					<h3>Background</h3>
-					<p>
-						User research indicated that the current ITSM dashboard lacks
-						functionality and does not cater to the diverse needs of different
-						personas, presenting a confusing mix of information. The objective
-						was to redesign the dashboard into an actionable tool tailored for
-						agents, emphasizing their day-to-day tasks and prioritizing key
-						activities.
-					</p>
-				</div>
-
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text-block-small-m-top">
-					<h3>Tasks</h3>
-					<ol>
-						<li>
-							<p>Enhance actionability of the dashboard</p>
-						</li>
-						<li>
-							<p>Provide a quick overview of daily updates</p>
-						</li>
-						<li>
-							<p>Implement persona-based configurations</p>
-						</li>
-						<li>
-							<p>Establish a new information hierarchy</p>
-						</li>
-						<li>
-							<p>Conduct thorough testing</p>
-						</li>
-					</ol>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img class="image-margin image-shadow"
-					src="assets/img/bmc_dashboard_console/01_bmc_dashboard_console.jpg" alt="ITSM Dashboard" />
-			</div>
-
-			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-				<p>Persona</p>
-				<img class="image-shadow" src="assets/img/bmc_dashboard_console/07_bmc_dashboard_console.jpg"
-					alt="Persona" />
-			</div>
-
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 image-margin">
-				<p>Solution</p>
-				<img class="image-shadow" src="assets/img/bmc_dashboard_console/02_bmc_dashboard_console.jpg"
-					alt="ITSM Dashboard Prototype" />
-			</div>
-
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h3 class="text-2xl font-medium mb-2">Background</h3>
+			<p class="mb-10">
+				User research indicated that the current ITSM dashboard lacks
+				functionality and does not cater to the diverse needs of different
+				personas, presenting a confusing mix of information. The objective
+				was to redesign the dashboard into an actionable tool tailored for
+				agents, emphasizing their day-to-day tasks and prioritizing key
+				activities.</p>
+			<h3 class="text-2xl font-medium mb-2">Tasks</h3>
+			<ol class="list-decimal ml-5">
+				<li>
+					<p>Enhance actionability of the dashboard</p>
+				</li>
+				<li>
+					<p>Provide a quick overview of daily updates</p>
+				</li>
+				<li>
+					<p>Implement persona-based configurations</p>
+				</li>
+				<li>
+					<p>Establish a new information hierarchy</p>
+				</li>
+				<li>
+					<p>Conduct thorough testing</p>
+				</li>
+			</ol>
 		</section>
 
-		<section class="project-body">
-			<div class="row no-gutter">
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6  text-block-small-m-top">
-					<h2>Asset Console</h2>
-					<h3>Background</h3>
-					<p>
-						BMC Helix ITSM's Asset Console is a pivotal feature that
-						facilitates comprehensive IT asset management. However, user
-						feedback indicates that UI is outdated and requires modernization.
-						Some enhancements could significantly improve user experience and
-						functionality.
-					</p>
-				</div>
+		<div class="w-full sd:max-w-full px-0 mb-10">
+			<img class="shadow-lg" src="assets/img/bmc_dashboard_console/01_bmc_dashboard_console.jpg"
+				alt="ITSM Dashboard" />
+		</div>
 
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-					<h3>Tasks</h3>
-					<ol>
-						<li>
-							<p>Research</p>
-						</li>
-						<li>
-							<p>Make actionable dashboard</p>
-						</li>
-						<li>
-							<p>Simplify bundle processes</p>
-						</li>
-						<li>
-							<p>Update UI</p>
-						</li>
-						<li>
-							<p>Find major drawnbacks</p>
-						</li>
-					</ol>
-				</div>
+		<p class="mb-2">Persona</p>
+		<div class="w-full sd:max-w-full lg:max-w-[540px] mb-10">
+			<img class="shadow-lg" src="assets/img/bmc_dashboard_console/07_bmc_dashboard_console.jpg" alt="Persona" />
+		</div>
 
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-block-small-m-top">
-					<p>Before</p>
-					<img class="image-shadow image-margin"
-						src="assets/img/bmc_dashboard_console/06_bmc_dashboard_console.jpg" alt="Old console" />
-				</div>
+		<div class="w-full sd:max-w-full px-0 mb-10">
+			<img class="shadow-lg" src="assets/img/bmc_dashboard_console/02_bmc_dashboard_console.jpg"
+				alt="ITSM Dashboard Prototype" />
+		</div>
 
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-					<p>Persona</p>
-					<img class="image-shadow" src="assets/img/bmc_dashboard_console/03_bmc_dashboard_console.jpg"
-						alt="Persona" />
-				</div>
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h2 class="text-4xl font-medium mb-2">Asset Console</h2>
+			<h3 class="text-2xl font-medium mb-2">Background</h3>
+			<p class="mb-10">
+				BMC Helix ITSM's Asset Console is a pivotal feature that
+				facilitates comprehensive IT asset management. However, user
+				feedback indicates that UI is outdated and requires modernization.
+				Some enhancements could significantly improve user experience and
+				functionality.</p>
+			<h3 class="text-2xl font-medium mb-2">Tasks</h3>
+			<ol class="list-decimal ml-5">
+				<li>
+					<p>Research</p>
+				</li>
+				<li>
+					<p>Make actionable dashboard</p>
+				</li>
+				<li>
+					<p>Simplify bundle processes</p>
+				</li>
+				<li>
+					<p>Update UI</p>
+				</li>
+				<li>
+					<p>Find major drawnbacks</p>
+				</li>
+			</ol>
+		</section>
 
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 text-block-small-m-top">
-					<h3>Interview</h3>
-					<p>
-						We conducted an interview with an Asset Console Manager who works with the platform on a daily
-						basis and identified several areas for improvement. Using an infinity map, we prioritized the
-						most critical ones. We also performed a competitive analysis to examine similar platforms and
-						identify innovative features.
-					</p>
-				</div>
+		<div class="w-full sd:max-w-full px-0 mb-10">
+			<img class="shadow-lg" src="assets/img/bmc_dashboard_console/06_bmc_dashboard_console.jpg"
+				alt="Old console" />
+		</div>
 
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-					<ol class="one-column-list">
-						<li>
-							<strong>Performance Issues:</strong>
-							<p>Reports of sluggishness, especially during navigation between tabs, have been noted.</p>
-						</li>
-						<li>
-							<strong>Search and Filter Limitations:</strong>
-							<p>The Asset Console's search and filter functionalities are perceived as less efficient
-								compared to other tools, leading to reduced usage.</p>
-						</li>
-						<li>
-							<strong>Many repetitive manual actions,</strong>
-							<p>when need to update asset by bubndle.</p>
-						</li>
-						<li>
-							<strong>Lack of customization</strong>
-						</li>
-					</ol>
-				</div>
+		<p class="mb-2">Persona</p>
+		<div class="w-full sd:max-w-full lg:max-w-[540px] mb-10">
+			<img class="shadow-lg" src="assets/img/bmc_dashboard_console/03_bmc_dashboard_console.jpg" alt="Persona" />
+		</div>
 
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-block-small-m-top">
-					<img class="image-shadow image-margin"
-						src="assets/img/bmc_dashboard_console/05_bmc_dashboard_console.jpg" alt="New console" />
-				</div>
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h3 class="text-2xl font-medium mb-2">Interview</h3>
+			<p class="mb-10">
+				We conducted an interview with an Asset Console Manager who works with the platform on a daily
+				basis and identified several areas for improvement. Using an infinity map, we prioritized the
+				most critical ones. We also performed a competitive analysis to examine similar platforms and
+				identify innovative features.</p>
+			<h3 class="text-2xl font-medium mb-2">Tasks</h3>
+			<ol class="list-decimal ml-5">
+				<li>
+					<strong>Performance Issues:</strong>
+					<p>Reports of sluggishness, especially during navigation between tabs, have been noted.</p>
+				</li>
+				<li>
+					<strong>Search and Filter Limitations:</strong>
+					<p>The Asset Console's search and filter functionalities are perceived as less efficient
+						compared to other tools, leading to reduced usage.</p>
+				</li>
+				<li>
+					<strong>Many repetitive manual actions,</strong>
+					<p>when need to update asset by bubndle.</p>
+				</li>
+				<li>
+					<strong>Lack of customization</strong>
+				</li>
+			</ol>
+		</section>
 
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 text-block-small-m-top">
-					<h3>Improvements</h3>
-					<p>
-						Based on research and requirements we found that users appreciate the intuitive navigation and
-						alignment with service management processes along with integration capabilities. While keeping
-						that we improved:
-					</p>
-				</div>
+		<div class="w-full sd:max-w-full mb-10">
+			<img class="shadow-lg" src="assets/img/bmc_dashboard_console/05_bmc_dashboard_console.jpg"
+				alt="New console" />
+		</div>
 
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-					<ol class="one-column-list">
-						<li>
-							<strong>Real-Time Data Visualization: </strong>
-							<p>Implemented dynamic charts and graphs.</p>
-						</li>
-						<li>
-							<strong>Customizable Widgets:</strong>
-							<p>Tailored dashboard to display relevant metrics and information.</p>
-						</li>
-						<li>
-							<strong>Automated Workflows:</strong>
-							<p>Introduced automation to reduce manual interventions.</p>
-						</li>
-						<li>
-							<strong>Assets Grouped in Tab Menu:</strong>
-							<p>Organized assets by categories for better navigation.</p>
-						</li>
-						<li>
-							<strong>3D Map: </strong>
-							<p>Added a 3D map to easily locate assets.</p>
-						</li>
-						<li>
-							<strong>Classic Table View: </strong>
-							<p>Kept the classic table view for smooth user adoption.</p>
-						</li>
-					</ol>
-				</div>
-
-			</div>
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h3 class="text-2xl font-medium mb-2">Improvements</h3>
+			<p class="mb-10">
+				Based on research and requirements we found that users appreciate the intuitive navigation and
+				alignment with service management processes along with integration capabilities. While keeping
+				that we improved:</p>
+			<h3 class="text-2xl font-medium mb-2">Tasks</h3>
+			<ol class="list-decimal ml-5">
+				<li>
+					<strong>Real-Time Data Visualization:</strong>
+					<p>Implemented dynamic charts and graphs.</p>
+				</li>
+				<li>
+					<strong>Customizable Widgets:</strong>
+					<p>Tailored dashboard to display relevant metrics and information.</p>
+				</li>
+				<li>
+					<strong>Automated Workflows:</strong>
+					<p>Introduced automation to reduce manual interventions.</p>
+				</li>
+				<li>
+					<strong>Assets Grouped in Tab Menu:</strong>
+					<p>Organized assets by categories for better navigation.</p>
+				</li>
+				<li>
+					<strong>3D Map:</strong>
+					<p>Added a 3D map to easily locate assets.</p>
+				</li>
+				<li>
+					<strong>Classic Table View:</strong>
+					<p>Kept the classic table view for smooth user adoption.</p>
+				</li>
+			</ol>
 		</section>
 	</section>
 
 	<footer class="section-2">
-		<a class="black-link" href="./index.html#portfolio">To projects ></a>
+		<a class="hover:text-fuchsia-600 underline" href="./index.html#portfolio">To projects ></a>
 	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/ui.js"></script>
+	<script src="js/chat.js"></script>
 </body>
 
 </html>
