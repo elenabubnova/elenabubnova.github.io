@@ -2,100 +2,98 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
 	<title>Elena Bubnova</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.tailwindcss.com"></script>
+
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon_io/favicon.ico" />
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/toggle_switch.css" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-	<link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" />
-
-	<link rel="stylesheet" href="css/bmc_self_guided_demo.css" />
-	<link rel="stylesheet" href="css/toggle_switch.css">
-	<link rel="stylesheet" href="css/styles.css">
-
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 </head>
 
 <body>
+	<header>
+		<div id="header-main" class="mx-10 mt-10 flex justify-between header header-white mb-[120px]"></div>
+	</header>
+
 	<section class="section-desc">
 		<div class="header header-white"></div>
 	</section>
 
-	<section class="wrapper">
-		<section class="project-summary">
-			<div>
-				<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-					<h1>Trust site / Status page Improving web experience</h1>
-					<p>My Role: Lead Product Designer</p>
-				</div>
+	<div id="chat-ai"></div>
+
+	<section
+		class="flex px-10 flex-col w-full max-w-full lg:max-w-[840px] mx-auto transition-all duration-100 ease-in-out">
+
+		<section class="max-w-[640px] mb-[120px]">
+			<h1 class="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-5">
+				Trust site / Status page Improving web experience
+			</h1>
+			<div class="w-full sm:w-8/12 md:w-8/12 lg:w-6/12">
+				<p>My Role: Lead Product Designer</p>
 			</div>
 		</section>
 
-		<section class="project-body">
-			<div class="row no-gutter">
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 text-block-small-m-top">
-					<p>The purpose of a Trust and Status Page website is providing real-time updates and
-						reliable information about service availability, performance, and incidents.</p>
-				</div>
-
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text-block-small-m-top">
-					<h3>Challenges</h3>
-					<ol>
-						<li>
-							Lack of representation of customer needs
-						</li>
-						<li>
-							Lack of visibility
-						</li>
-						<li>
-							Lack of information regarding which plugins are experiencing outages
-						</li>
-						<li>
-							Lack of detailed incident information
-						</li>
-						<li>
-							Lack of historic data representation
-						</li>
-						<li>
-							No information about upcoming or current maintenance
-						</li>
-					</ol>
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<img class="image-margin image-shadow" src="assets/img/trust_site/01_trust_site.jpg" alt="" />
-				</div>
-
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-6 text-block-small-m-top">
-					<h4>Solution</h4>
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<img class="image-margin image-shadow" src="assets/img/trust_site/02_trust_site.jpg" alt="" />
-				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<img class="image-margin image-shadow" src="assets/img/trust_site/03_trust_site.jpg" alt="" />
-				</div>
-
-			</div>
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<p class="mb-10">The purpose of a Trust and Status Page website is providing real-time updates and
+				reliable information about service availability, performance, and incidents.</p>
+			<h3 class="text-2xl font-medium mb-2">Challenges</h3>
+			<ol class="list-decimal ml-5">
+				<li>
+					Lack of representation of customer needs
+				</li>
+				<li>
+					Lack of visibility
+				</li>
+				<li>
+					Lack of information regarding which plugins are experiencing outages
+				</li>
+				<li>
+					Lack of detailed incident information
+				</li>
+				<li>
+					Lack of historic data representation
+				</li>
+				<li>
+					No information about upcoming or current maintenance
+				</li>
+			</ol>
 		</section>
+
+		<div class="w-full sd:max-w-full px-0 mb-10">
+			<img class="shadow-lg" src="assets/img/trust_site/01_trust_site.jpg" alt="" />
+		</div>
+
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-5">
+			<h3 class="text-2xl font-medium">Challenges</h3>
+		</section>
+
+		<div class="w-full sd:max-w-full px-0 mb-10">
+			<img class="shadow-lg" src="assets/img/trust_site/02_trust_site.jpg" alt="" />
+		</div>
+
+		<div class="w-full sd:max-w-full px-0 mb-10">
+			<img class="shadow-lg" src="assets/img/trust_site/03_trust_site.jpg" alt="" />
+		</div>
 	</section>
 
 	<footer class="section-2">
-		<a class="black-link" href="./index.html#portfolio">To projects ></a>
+		<a class="hover:text-fuchsia-600 underline" href="./index.html#portfolio">To projects ></a>
 	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/ui.js"></script>
+	<script src="js/chat.js"></script>
 </body>
 
 </html>
