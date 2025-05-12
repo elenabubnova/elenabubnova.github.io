@@ -2,19 +2,156 @@
     "name": "Elena",
     "age": "No way =)",
     "location": "California",
-    "profession": "Product Designer",
+    "profession": {
+        "title": "Product Designer",
+        "industry_focus": ["SaaS", "Automotive", "Telecommunication"]
+    },
+    "expertise": {
+        "core_specialization": "AI-integrated UX/UI design",
+        "key_strengths": [
+            "User-centered experiences",
+            "Complex systems design",
+            "Accessible solutions",
+            "Business and user alignment"
+        ]
+    },
     "skills": [
-        "Python",
-        "React",
+        "Figma",
+        "Adobe",
         "AI",
-        "Web Development"
+        "Web Development",
+        "UI / UX",
+        "LLM",
+        "Product Design",
+        "Visual Design",
+        "Graphic Design",
+        "Design System",
+        "Autodesk 3ds Max",
+        "CSS",
+        "Tailwind",
+        "HTML",
+        "JS",
+        "Leadership",
+        "Adobe InDesign",
+        "User Experience (UX)",
+        "Design Management",
+        "Design Leadership",
+        "Design Guidelines",
+        "Presentations",
+        "Cross-team Collaboration",
+        "Presentation Skills",
+        "Storytelling",
+        "Prototyping",
+        "User Interface Design",
+        "Wireframing",
+        "High-Fidelity Prototypes",
+        "Interaction Design",
+        "User Flows",
+        "Micro-Interactions",
+        "Mobile Responsive Design",
+        "Concept Development",
+        "Iconography",
+        "Brand Management",
+        "Brand Development",
+        "Adobe Illustrator",
+        "Typography",
+        "Page Layout",
+        "Digital Media Design",
+        "Content Management Systems (CMS)",
+        "Brand Identity",
+        "Visual Identity Design",
+        "Illustration",
+        "Web Design",
+        "3D",
+        "Branding",
+        "Branding & Identity",
+        "Visual Communication",
+        "Art Direction",
+        "Strategy"
     ],
     "hobbies": [
         "Cats",
-        "Gardning",
+        "Gardening",
         "Traveling"
     ],
-    "bio": "I’m a product designer with a strong background in AI-integrated UX/UI design. I specialize in creating user-centered experiences for complex systems, particularly in SaaS and tech environments. I’ve worked across industries, including automotive and telecommunication, where I’ve focused on designing intuitive, accessible solutions that cater to both business needs and user goals. I’m passionate about blending innovation with practicality, and I thrive in cross-functional teams where I can collaborate with engineers, product managers, and stakeholders. ",
-    "favorite color": "black",
-    "": ""  
+    "work_experience": {
+        "BMC Software": {
+            "years": "5",
+            "focus": [
+                "IT Service Management",
+                "IT Operational Management",
+                "Generative AI integration",
+                "Dashboard redesign",
+                "Product demos",
+                "New feature development"
+            ],
+            "team_collaboration": ["Product Managers", "Engineers", "Researchers"],
+            "user_experience_improvements": [
+                "Led user research",
+                "Conducted usability testing",
+                "Analyzed application performance",
+                "Optimized bottlenecks",
+                "Boosted conversion rates on BMC.com"
+            ],
+            "leadership": {
+                "team_size": 2,
+                "location": "Santa Clara",
+                "responsibilities": [
+                    "Facilitated review meetings",
+                    "Planned sprints",
+                    "Assigned projects",
+                    "Ensured roadmap alignment"
+                ]
+            }
+        },
+        "ODS Design Studio": {
+            "role": "End-to-end UX/UI designer",
+            "focus": ["Web applications", "E-commerce platforms"],
+            "clients": ["Reebok", "French Software Company", "Startups"]
+        },
+        "Marketing and Visual Design": {
+            "industries": ["Telecommunications", "Automotive"],
+            "additional_roles": ["Development companies", "Design studios"],
+            "cross-functional_collaboration": "Bridging gaps between design and marketing"
+        }
+    },
+    "education": {
+        "degrees": [
+            "Bachelor’s in Graphic Design",
+            "Master’s in Media Design"
+        ],
+        "additional_training": ["Fine Arts College Program", "Google UX/UI Bootcamp", "Springboard UX/UI Bootcamp"]
+    },
+    "work_style": {
+        "approach": "Blending innovation with practicality",
+        "collaboration": ["Engineers", "Product Managers", "Stakeholders"],
+        "team_preference": "Cross-functional teams"
+    },
+    "favorite_color": "Black",
+    "additional_facts": {
+        "recent_projects": [
+            "Integrated Generative AI into BMC’s 13-product portfolio",
+            "Redesigned multiple dashboards for improved usability",
+            "Enhanced UX/UI leading to measurable improvements in conversion rates"
+        ],
+        "team_management": {
+            "experience": "Led a team of two designers",
+            "location": "Santa Clara",
+            "responsibilities": [
+                "Sprint planning",
+                "Project assignments",
+                "Roadmap alignment"
+            ]
+        },
+        "past experiences": {
+            "marketing_background": "Worked many years as a visual and web designer",
+            "industries": ["Telecommunications", "Automotive"],
+            "collaboration_strength": "Acts as a bridge between design and marketing teams"
+        },
+        "design_philosophy": [
+            "Strong belief in user-centered design",
+            "Passionate about creating practical and intuitive experiences",
+            "Thrives in cross-functional collaboration"
+        ]
+    }
 }
