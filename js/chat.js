@@ -1,4 +1,3 @@
-const apiKey = "AIzaSyCBW0Y9lzHYHMxttPoRZHYeEN07XX8rm4M"; // dont forget to put into .env !!!!!!!!!!!!!!!!!!!!!
 let aboutMeData = null;
 const chat = document.getElementById("chat");
 
@@ -66,7 +65,6 @@ function showPrepromptsInChat() {
     const preprompts = [
         "What are Elena's hobbies?",
         "What does Elena do for work?",
-        "Where is Elena from?",
         "Summarize Elena's background"
     ];
 
