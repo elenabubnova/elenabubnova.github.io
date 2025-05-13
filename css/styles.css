@@ -7,38 +7,18 @@
 	--text-project-grey: #434343;
 }
 
-
 body {
-	font-family: "Roboto", sans-serif;
+	/* font-family: "Roboto", sans-serif; */
+	font-family: "Inter", sans-serif;
 }
 
-/* h1 {
-	font-size:2.8rem;
-    font-weight: 700 !important;
-} */
-
-/* h2 {
-	font-size: 2.2rem;
-	font-weight: 600;
-	margin: 1rem 0 0.5rem 0;
+p, ul, ol {
+	font-weight: 300;
 }
-
-h3 {
-	font-size: 1.2rem;
-	font-weight: 600;
-	margin: 0.8rem 0 0.8rem 0;
-}
-
-h5 {
-	font-weight: 600;
-	margin: 1rem 0 0.5rem 0;
-} */
 
 a {
 	font-weight: 700;
 }
-
-
 
 /* AI */
 
@@ -473,9 +453,9 @@ video {
 	background: var(--mint);
 }
 
-.contur {
+/* .contur {
 	overflow: hidden;
-}
+} */
 
 .visible {
 	visibility: visible;

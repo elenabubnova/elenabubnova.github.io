@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3D Background</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            /* Make sure it's in the background */
+        }
+
+        #hoverLabel {
+            position: absolute;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 6px 10px;
+            border-radius: 6px;
+            pointer-events: none;
+            font-family: sans-serif;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="hoverLabel"></div>
+
+
+
+
+    <script>
+
+
+        // === Scene Setup ===
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xADD8E6); // Light blue color
+        const camera = new THREE.PerspectiveCamera(
+            50,
+            window.innerWidth / window.innerHeight,
+            0.1,
+            1000
+        );
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // === Post-processing setup for blur ===
+        const composer = new THREE.EffectComposer(renderer);
+        const renderPass = new THREE.RenderPass(scene, camera);
+        composer.addPass(renderPass);
+
+        const blurPass = new THREE.GaussianBlurPass();
+        blurPass.enabled = false; // Initially disabled
+        composer.addPass(blurPass);
+
+        // === Lighting ===
+        const light = new THREE.PointLight(0xffffff, 1.5);
+        light.position.set(5, 5, 5);
+        scene.add(light);
+        scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+
+        // === Objects ===
+        const objects = [];
+
+        function createObject(geometry, color, x, name) {
+            const material = new THREE.MeshStandardMaterial({ color });
+            const mesh = new THREE.Mesh(geometry, material);
+            mesh.position.x = x;
+            mesh.userData.name = name;
+            scene.add(mesh);
+            objects.push(mesh);
+        }
+
+        createObject(new THREE.SphereGeometry(0.8, 32, 32), 0x0077ff, -2, 'Blue Sphere');
+        createObject(new THREE.BoxGeometry(1, 1, 1), 0xff4400, 0, 'Red Cube');
+        createObject(new THREE.TorusGeometry(0.6, 0.2, 16, 200), 0x00ff99, 2, 'Green Torus');
+
+        // === Camera Position ===
+        camera.position.z = 5;
+
+        // === Hover and Raycaster ===
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        const label = document.getElementById('hoverLabel');
+        let hoveredObject = null;
+        let bounceTime = 0;
+        let mouseX = 0;
+        let mouseY = 0;
+
+        window.addEventListener('mousemove', (event) => {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+        });
+
+        // === Animate ===
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Detect hover
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(objects);
+
+            if (intersects.length > 0) {
+                if (hoveredObject !== intersects[0].object) {
+                    hoveredObject = intersects[0].object;
+                    bounceTime = 0;
+                    label.innerText = hoveredObject.userData.name;
+                    label.style.display = 'block';
+                    blurPass.enabled = true; // Enable blur when hovering
+                }
+                label.style.left = `${mouseX + 10}px`;
+                label.style.top = `${mouseY + 10}px`;
+            } else {
+                hoveredObject = null;
+                label.style.display = 'none';
+                blurPass.enabled = false; // Disable blur when not hovering
+            }
+
+            // Animate all objects
+            for (const obj of objects) {
+                obj.rotation.y += 0.01;
+
+                if (obj === hoveredObject) {
+                    bounceTime += 0.1;
+                    obj.position.y = Math.sin(bounceTime) * 0.1;
+                    obj.scale.set(1.1, 1.1, 1.1);
+                } else {
+                    obj.position.y = 0;
+                    obj.scale.set(1, 1, 1);
+                }
+            }
+
+            // Render using the effect composer
+            composer.render();
+        }
+
+        animate();
+
+        // === Responsive Resize ===
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            composer.setSize(window.innerWidth, window.innerHeight); // Update composer size
+        });
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/EffectComposer.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/RenderPass.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/postprocessing/GaussianBlurPass.js"></script>
+</body>
+
+</html>
