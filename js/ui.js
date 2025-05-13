@@ -9,20 +9,81 @@ if ($("#header-main").hasClass("header-black")) {
 }
 
 const $headerBlock = $(`
-			<a href="index.html" class="${link} logo hover:text-fuchsia-600">Elena<br>Bubnova</a>
+		<a href="index.html" class="${link} logo hover:text-fuchsia-600">Elena<br>Bubnova</a>
+		<div class="flex gap-8 align-items-baseline">
+
+
+			<div id="mailIcon" onclick="toggleMailPopup()" class="${link} hover:text-fuchsia-600">
+				<i class="fa-regular fa-envelope fa-2x"></i>
+			</div>
+
+
+			<div id="mailPopup" class="rounded-full shadow-lg transition duration-200">
+
+				<div id="chatHeader">Contact me<span onclick="toggleMailPopup()" style="float:right; cursor:pointer;">
+						<i class="fa fa-times fa-lg" aria-hidden="true"></i>
+					</span>
+				</div>
+
+
+				<form id="mailForm" class="rounded-xl p-0 w-full max-w-md space-y-6" novalidate>
+					<input type="hidden" name="_captcha" value="false">
+
+					<div>
+						<label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+						<input type="email" id="email" name="email" required pattern="^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+							placeholder="info@mail.com"
+							class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-fuchsia-500 focus:border-fuchsia-500">
+					</div>
+
+					<div>
+						<label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+						<input type="text" id="subject" name="subject" required
+							class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-fuchsia-500 focus:border-fuchsia-500">
+					</div>
+
+					<div>
+						<label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+						<textarea id="message" name="message" rows="4" required
+							class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-fuchsia-500 focus:border-fuchsia-500"></textarea>
+					</div>
+
+					<button type="submit"
+						class="w-full bg-fuchsia-600 text-white py-2 px-4 rounded-lg hover:bg-fuchsia-700 transition">
+						Send Message
+					</button>
+				</form>
+			</div>
 			<div>
-				<a href="https://www.linkedin.com/in/elenabubnova/" target="_blank" class="${link} data-info hover:text-fuchsia-600" aria-label="LinkedIn Profile">
-					<i class="fab fa-linkedin fa-2x" aria-hidden="false"></i>
+				<a href="https://www.linkedin.com/in/elenabubnova/" target="_blank"
+					class="${link} data-info hover:text-fuchsia-600" aria-label="LinkedIn Profile">
+					<i class="fa-brands fa-linkedin-in fa-2x" aria-hidden="false"></i>
 				</a>
 			</div>
+		</div>
 		`);
+
+// const $headerBlock = $(`
+// 	<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-black/10 flex justify-between items-center px-6 py-4">
+// 	  <a href="index.html" class="${link} logo hover:text-fuchsia-600 text-xl font-bold leading-tight">
+// 		Elena<br>Bubnova
+// 	  </a>
+// 	  <div>
+// 		<a href="https://www.linkedin.com/in/elenabubnova/" target="_blank"
+// 		   class="${link} data-info hover:text-fuchsia-600"
+// 		   aria-label="LinkedIn Profile">
+// 		  <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+// 		</a>
+// 	  </div>
+// 	</header>
+//   `);
 
 $("#header-main").append($headerBlock);
 
 
 const $chatBlock = $(`
 	<!-- Chat -->
-		<div id="chatIcon" onclick="togglePopup()">
+	<div id="chatIcon" onclick="togglePopup()">
 		<i class="fa-solid fa-cat ${link} hover:text-fuchsia-600 text-2xl" aria-hidden="true"></i>
 	</div>
 

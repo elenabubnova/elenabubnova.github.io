@@ -20,6 +20,26 @@ a {
 	font-weight: 700;
 }
 
+/* MAILTO */
+
+#mailIcon {
+
+}
+
+#mailPopup {
+	display: none;
+	position: fixed;
+	top: 80px;
+	right: 120px;
+	width: 300px;
+	background: #fff;
+	border-radius: 10px;
+	/* box-shadow: 0 2px 20px rgba(0,0,0,0.2); */
+	padding: 15px;
+	z-index: 1000;
+	/* font-family: sans-serif; */
+}
+
 /* AI */
 
 #chatIcon {
