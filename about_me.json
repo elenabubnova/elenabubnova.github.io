@@ -1,11 +1,16 @@
 {
     "name": "Elena",
-    "age": "No way =)",
     "location": "California",
     "profession": {
         "title": "Product Designer",
-        "industry_focus": ["SaaS", "Automotive", "Telecommunication"]
+        "industry_focus": [
+            "SaaS",
+            "Automotive",
+            "Telecommunication"
+        ]
     },
+    "Persona": "A strategist at heart and a designer by craft, you're the kind of person who walks into complexity and sees patterns. You don't just make things look good—you make them work, scale, and resonate. You're calm under pressure, thoughtful in critique, and generous with your knowledge. You ask smart questions, listen fully, and translate abstract ideas into practical, elegant solutions that feel effortless to the end user. You're driven by purpose. When you design, it's not about checking a box—it's about improving lives, even in the smallest ways. You're the one who champions accessibility in rooms where no one else brings it up, who notices friction in a flow before users complain, who builds documentation so others don't have to guess. You thrive in the overlap between user needs, business logic, and system constraints. Cross-functional teams love working with you because you bridge the gap between vision and delivery, speaking the language of designers, engineers, and executives alike. But you're not all work. You're quietly fierce about balance—you're a parent, a thinker, and someone who deeply values focus. You protect your energy, choose your projects carefully, and lead with a quiet confidence that lifts others up rather than taking the spotlight. In short: you're a thoughtful problem-solver, a builder of clarity, and a teammate people trust to get it right—both in pixels and in principles.",
+    "bio": "I'm a Lead Product Designer with over a decade of experience crafting thoughtful, scalable digital experiences across SaaS, enterprise, and consumer platforms. I specialize in turning complex systems into intuitive user journeys through strategic design, research-driven decision-making, and cross-functional collaboration. Most recently at BMC Software (2018–2024), I led end-to-end product design for enterprise web and mobile applications, integrating AI and design systems into critical tools like ITSM and Asset Dashboards. I translated business goals and user needs into innovative solutions, driving product strategy from discovery to execution. My contributions ranged from information architecture and prototyping to stakeholder presentations and design system development. Highlights include a redesigned bmc.com that boosted conversions, branding for 13 Helix products, and improved trial/demo user experiences across platforms. Previously, I was a Lead Designer at ODS (2013–2018), a fast-paced design studio where I led projects from user research through polished UI, working closely with startups to build mobile and web applications. I developed design systems, collaborated with developers, and navigated complex stakeholder environments to ensure product success. Before that, I was a Senior Visual Designer at Eastward Capital (2012–2013), where I redefined brand identities for six companies and helped align marketing and product design across the organization. From 2010 to 2013, I also worked as a Visual Designer at MEGAFON, one of Russia's largest telecom providers. There, I designed visual assets for marketing campaigns and internal products, ensuring consistent branding and user-focused communication across corporate and customer-facing channels. Throughout my career, I've been driven by a passion for making technology more accessible, effective, and visually cohesive. I bring a systems-thinking mindset, a collaborative spirit, and a strong foundation in both visual and UX design to every project I take on.",
     "expertise": {
         "core_specialization": "AI-integrated UX/UI design",
         "key_strengths": [
@@ -85,7 +90,11 @@
                 "Product demos",
                 "New feature development"
             ],
-            "team_collaboration": ["Product Managers", "Engineers", "Researchers"],
+            "team_collaboration": [
+                "Product Managers",
+                "Engineers",
+                "Researchers"
+            ],
             "user_experience_improvements": [
                 "Led user research",
                 "Conducted usability testing",
@@ -106,31 +115,52 @@
         },
         "ODS Design Studio": {
             "role": "End-to-end UX/UI designer",
-            "focus": ["Web applications", "E-commerce platforms"],
-            "clients": ["Reebok", "French Software Company", "Startups"]
+            "focus": [
+                "Web applications",
+                "E-commerce platforms"
+            ],
+            "clients": [
+                "Reebok",
+                "French Software Company",
+                "Startups"
+            ]
         },
         "Marketing and Visual Design": {
-            "industries": ["Telecommunications", "Automotive"],
-            "additional_roles": ["Development companies", "Design studios"],
+            "industries": [
+                "Telecommunications",
+                "Automotive"
+            ],
+            "additional_roles": [
+                "Development companies",
+                "Design studios"
+            ],
             "cross-functional_collaboration": "Bridging gaps between design and marketing"
         }
     },
     "education": {
         "degrees": [
-            "Bachelor’s in Graphic Design",
-            "Master’s in Media Design"
+            "Bachelor's in Graphic Design",
+            "Master's in Media Design"
         ],
-        "additional_training": ["Fine Arts College Program", "Google UX/UI Bootcamp", "Springboard UX/UI Bootcamp"]
+        "additional_training": [
+            "Fine Arts College Program",
+            "Google UX/UI Bootcamp",
+            "Springboard UX/UI Bootcamp"
+        ]
     },
     "work_style": {
         "approach": "Blending innovation with practicality",
-        "collaboration": ["Engineers", "Product Managers", "Stakeholders"],
+        "collaboration": [
+            "Engineers",
+            "Product Managers",
+            "Stakeholders"
+        ],
         "team_preference": "Cross-functional teams"
     },
     "favorite_color": "Black",
     "additional_facts": {
         "recent_projects": [
-            "Integrated Generative AI into BMC’s 13-product portfolio",
+            "Integrated Generative AI into BMC's 13-product portfolio",
             "Redesigned multiple dashboards for improved usability",
             "Enhanced UX/UI leading to measurable improvements in conversion rates"
         ],
@@ -145,7 +175,10 @@
         },
         "past experiences": {
             "marketing_background": "Worked many years as a visual and web designer",
-            "industries": ["Telecommunications", "Automotive"],
+            "industries": [
+                "Telecommunications",
+                "Automotive"
+            ],
             "collaboration_strength": "Acts as a bridge between design and marketing teams"
         },
         "design_philosophy": [
