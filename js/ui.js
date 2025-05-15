@@ -10,46 +10,48 @@ if ($("#header-main").hasClass("header-black")) {
 
 const $headerBlock = $(`
 		<a href="index.html" class="${link} logo hover:text-fuchsia-600">Elena<br>Bubnova</a>
-		<div class="flex gap-8 align-items-baseline">
+		<div class="flex gap-4 align-items-baseline">
 
 
 			<div id="mailIcon" onclick="toggleMailPopup()" class="${link} hover:text-fuchsia-600">
-				<i class="fa-regular fa-envelope fa-2x"></i>
+				<i class="fa-regular fa-envelope text-[1.8rem]"></i>
 			</div>
 
 
-			<div id="mailPopup" class="rounded-full shadow-lg transition duration-200">
+			<div id="mailPopup" class="w-[350px] rounded-full shadow-lg bg-white transition duration-200">
 
-				<div id="chatHeader">Contact me<span onclick="toggleMailPopup()" style="float:right; cursor:pointer;">
-						<i class="fa fa-times fa-lg" aria-hidden="true"></i>
-					</span>
-				</div>
+			<div id="chatHeader" class=""><span onclick="toggleMailPopup()" style="float:right; cursor:pointer;">
+					<i class="fa fa-times fa-lg" aria-hidden="true"></i>
+				</span>
+			</div>
 
-
-				<form id="mailForm" class="rounded-xl p-0 w-full max-w-md space-y-6" novalidate>
+			<form id="mailForm" class="rounded-xl p-0 w-full max-w-md space-y-6" md:max-w-full novalidate>
+					<p id="chatContact" class="font-bold">Contact me</p>
 					<input type="hidden" name="_captcha" value="false">
-
 					<div>
-						<label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+						<label for="email" class="block text-sm font-medium text-gray-700">Your Email <span class="text-red-500">*</span> </label>
 						<input type="email" id="email" name="email" required pattern="^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
 							placeholder="info@mail.com"
 							class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-fuchsia-500 focus:border-fuchsia-500">
 					</div>
 
 					<div>
-						<label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
-						<input type="text" id="subject" name="subject" required
+						<label for="subject" class="block text-sm font-medium text-gray-700">Subject <span class="text-red-500">*</span> </label>
+						<input type="text" id="subject" name="subject" required placeholder="Hello"
 							class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-fuchsia-500 focus:border-fuchsia-500">
 					</div>
 
 					<div>
-						<label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-						<textarea id="message" name="message" rows="4" required
+						<label for="message" class="block text-sm font-medium text-gray-700">Message <span class="text-red-500">*</span> </label>
+						<textarea id="message" name="message" rows="4" required placeholder="Something important"
 							class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-fuchsia-500 focus:border-fuchsia-500"></textarea>
 					</div>
 
+					<div id="formError" class="w-full bg-red-600 text-white py-2 px-4 rounded-lg transition hidden"></div>
+					<div id="formInfo"  class="w-full text-white py-2 px-4 rounded-lg hidden"></div>
+
 					<button type="submit"
-						class="w-full bg-fuchsia-600 text-white py-2 px-4 rounded-lg hover:bg-fuchsia-700 transition">
+						class="w-full bg-black text-white py-2 px-4 rounded-lg hover:bg-fuchsia-700 transition">
 						Send Message
 					</button>
 				</form>
@@ -57,7 +59,7 @@ const $headerBlock = $(`
 			<div>
 				<a href="https://www.linkedin.com/in/elenabubnova/" target="_blank"
 					class="${link} data-info hover:text-fuchsia-600" aria-label="LinkedIn Profile">
-					<i class="fa-brands fa-linkedin-in fa-2x" aria-hidden="false"></i>
+					<i class="fa-brands fa-linkedin-in text-[1.8rem]" aria-hidden="false"></i>
 				</a>
 			</div>
 		</div>
