@@ -18,7 +18,7 @@ const $headerBlock = $(`
 			</div>
 
 
-			<div id="mailPopup" class="w-[350px] rounded-full shadow-lg bg-white transition duration-200">
+			<div id="mailPopup" class="w-[300px] rounded-full shadow-lg bg-white transition duration-200">
 
 			<div id="chatHeader" class=""><span onclick="toggleMailPopup()" style="float:right; cursor:pointer;">
 					<i class="fa fa-times fa-lg" aria-hidden="true"></i>
