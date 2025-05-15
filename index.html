@@ -420,10 +420,10 @@
 		});
 
 		const material2 = new THREE.MeshBasicMaterial({
-			color: 0x00ffff,
+			color: 0xff00ff,
 			wireframe: true,
 			transparent: true,
-			opacity: 0.2
+			opacity: 0.7
 		});
 
 		const material3 = new THREE.MeshBasicMaterial({
@@ -438,7 +438,7 @@
 			material1
 		);
 		const icosahedron = new THREE.Mesh(
-			new THREE.IcosahedronGeometry(6, 1),
+			new THREE.IcosahedronGeometry(10, 1),
 			material2
 		);
 		const torus = new THREE.Mesh(
@@ -454,9 +454,9 @@
 		// scene.add(box);
 
 
-		scene.add(torusKnot);
+		// scene.add(torusKnot);	
 		scene.add(icosahedron);
-		scene.add(torus);
+		// scene.add(torus);
 
 		function animate() {
 			requestAnimationFrame(animate);
@@ -464,8 +464,8 @@
 			torusKnot.rotation.x += 0.0001;
 			torusKnot.rotation.y += 0.0002;
 
-			icosahedron.rotation.x -= 0.00015;
-			icosahedron.rotation.y -= 0.00025;
+			icosahedron.rotation.x -= 0.00035;
+			icosahedron.rotation.y -= 0.00045;
 
 			torus.rotation.x += 0.00005;
 			torus.rotation.y += 0.00015;

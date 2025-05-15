@@ -10,11 +10,11 @@ if ($("#header-main").hasClass("header-black")) {
 
 const $headerBlock = $(`
 		<a href="index.html" class="${link} logo hover:text-fuchsia-600">Elena<br>Bubnova</a>
-		<div class="flex gap-4 align-items-baseline">
+		<div class="flex gap-4 items-baseline">
 
 
 			<div id="mailIcon" onclick="toggleMailPopup()" class="${link} hover:text-fuchsia-600">
-				<i class="fa-regular fa-envelope text-[1.8rem]"></i>
+				<i class="fa-regular fa-envelope text-[1.5rem]"></i>
 			</div>
 
 
