@@ -16,8 +16,6 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 		rel="stylesheet">
-
-
 	<style>
 		#animated-bg canvas {
 			position: absolute;
@@ -27,6 +25,7 @@
 			height: 100% !important;
 			z-index: -100;
 		}
+
 		#gradientOverlay {
 			background: linear-gradient(to top, black 0%, transparent 80%);
 		}
@@ -44,10 +43,10 @@
 
 	<section id="animated-bg" class="text-white px-10 mb-[120px]">
 		<div class="flex flex-col max-w-[1190px] mx-auto">
-			
+
 			<!-- Flex layout: image on top on mobile, side-by-side on desktop -->
 			<div class="flex flex-col-reverse md:flex-row items-center md:items-start md:justify-center gap-10">
-				
+
 				<div id="gradientOverlay" class="pointer-events-none absolute bottom-0 w-full h-[130px] z-[-10]"></div>
 				<!-- Text Block (50%) -->
 				<div class="md:basis-2/5 space-y-8 md:justify-center max-w-full md:max-w-[600px]">
@@ -88,310 +87,13 @@
 		</div>
 	</section>
 
-
-
-
 	<section class="bg-black py-10 px-4 sm:px-6 lg:px-8 text-white">
 		<div id="portfolio" class="space-y-5">
-
-			<!-- Product Design Section -->
-			<div>
-				<h3 id="product-design-section" class="text-2xl font-semibold mb-5">Product Design</h3>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
-
-					<a href="bmc_helix_gpt.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/bmc_helix_gpt/bmc_helix_gpt_main.webp" alt="HelixGPT"
-							class="w-full h-auto object-contain transition duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC HelixGPT (AI)
-							</span>
-						</div>
-					</a>
-
-					<a href="bmc_dashboard_console.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/bmc_dashboard_console/bmc_dashboard_console_main.webp" alt="Dashboards"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC Dashboards
-							</span>
-						</div>
-					</a>
-
-					<a href="bmc_helix_gpt_mobile.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/bmc_helix_gpt_mobile/bmc_helix_gpt_mobile_main.webp" alt="HelixGPTMobile"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC HelixGPT (AI) Mobile
-							</span>
-						</div>
-					</a>
-
-					<a href="helix_portal.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/helix_portal/helix_portal_main.webp" alt="HelixPortal"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC Helix Portal
-							</span>
-						</div>
-					</a>
-
-					<a href="about_product_page.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/about_product_page/about_product_page_main.webp" alt="Product"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								“About Product” Page
-							</span>
-						</div>
-					</a>
-
-					<a href="summer.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/summer/summer_main.webp" alt="Summer app link"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								Summer
-							</span>
-						</div>
-					</a>
-
-					<a href="inkagram.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/inkagram/ink_main.webp" alt="Inkagram app link"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								Inkagram
-							</span>
-						</div>
-					</a>
-
-					<a href="videoshop.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/videoshop/video_main.webp" alt="VideoShop app link"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								VideoShop
-							</span>
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<!-- Web / UI/UX Section -->
-			<div>
-				<h3 id="ui-ux-section" class="text-2xl font-semibold mb-5">Web / UI/UX</h3>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
-
-					<a href="documentation_portal.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/documentation_portal/documentation_portal_main.webp"
-							alt="DocumentationPortal"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								Documentation Portal
-							</span>
-						</div>
-					</a>
-
-					<a href="home_page.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/home_page/home_page_main.webp" alt="Home_Page"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC Home Page
-							</span>
-						</div>
-					</a>
-
-					<a href="trust_site.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/trust_site/trust_site_main.webp" alt="Trust_Site"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								Trust Site
-							</span>
-						</div>
-					</a>
-
-					<a href="chatbot.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/chatbot/chatbot_main.webp" alt="ChatBot"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								Chat Bot
-							</span>
-						</div>
-					</a>
-
-					<a href="bmc_product_page.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/bmc_product_page/bmc_product_page_main.webp" alt="BMC.com"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC.COM Product Page
-							</span>
-						</div>
-					</a>
-
-					<a href="bmc_self_guided_demo.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/bmc_self_guided_demo/bmc_self_guided_demo_main.webp" alt="Demo"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC Self-Guided Demo
-							</span>
-						</div>
-					</a>
-
-				</div>
-			</div>
-
-			<!-- Visual Design Section -->
-			<div>
-				<h3 id="visual-design-section" class="text-2xl font-semibold mb-5">Visual Design</h3>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
-
-					<a href="maui.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/maui/maui_main.webp" alt="Club"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								Hundred Percent Club
-							</span>
-						</div>
-					</a>
-
-					<a href="bmc.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/bmc/bmc_main.webp" alt="Branding"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC Branding
-							</span>
-						</div>
-					</a>
-
-					<a href="innovation_labs.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/innovation_labs/innovation_labs_main.webp" alt="InnovationLabs"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								Innovation Labs
-							</span>
-						</div>
-					</a>
-
-					<a href="illustration.html" class="group relative block overflow-hidden shadow-md">
-						<!-- Image -->
-						<img src="assets/img/illustration/illustration_main.webp" alt="Illustrations"
-							class="w-full h-auto object-contain transition-transform duration-700" />
-
-						<!-- Hover Overlay -->
-						<div
-							class="absolute inset-0 bg-fuchsia-600 bg-opacity-0 group-hover:bg-opacity-90 transition-all duration-700 flex items-center justify-center">
-							<span
-								class="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-								BMC Illustrations
-							</span>
-						</div>
-					</a>
-
-				</div>
-			</div>
-
+			<div id="product-design-section"></div>
+			<div id="ui-ux-section"></div>
+			<div id="visual-design-section"></div>
 		</div>
 	</section>
-
-	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/config.js"></script>
@@ -496,6 +198,9 @@
 			renderer.setSize(window.innerWidth, window.innerHeight);
 		});
 	</script>
+
+	<script src="js/portfolio-config.js"></script>
+	<script src="js/portfolio.js"></script>
 
 </body>
 
