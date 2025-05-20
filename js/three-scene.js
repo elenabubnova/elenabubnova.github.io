@@ -47,7 +47,7 @@ const torusKnot = new THREE.Mesh(
     material1
 );
 const icosahedron = new THREE.Mesh(
-    new THREE.IcosahedronGeometry(10, 1),
+    new THREE.IcosahedronGeometry(8, 1),
     material2
 );
 const torus = new THREE.Mesh(
