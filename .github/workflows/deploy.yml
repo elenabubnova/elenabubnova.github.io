@@ -27,7 +27,18 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          node -e "const fs=require('fs'); if(!process.env.GEMINI_API_KEY){throw new Error('GEMINI_API_KEY secret is not set')} fs.writeFileSync('js/config.js', 'window.GEMINI_API_KEY = ' + JSON.stringify(process.env.GEMINI_API_KEY) + ';\\n');"
+          node -e "
+          const fs = require('fs');
+          const key = process.env.GEMINI_API_KEY;
+          if (key) {
+            fs.writeFileSync('js/config.js', 'window.GEMINI_API_KEY = ' + JSON.stringify(key) + ';\n');
+          } else if (!fs.existsSync('js/config.js')) {
+            throw new Error('GEMINI_API_KEY secret is not set and js/config.js is missing');
+          }
+          "
+
+      - name: Verify config.js
+        run: test -f js/config.js && grep -q GEMINI_API_KEY js/config.js
 
       - uses: actions/configure-pages@v5
 
