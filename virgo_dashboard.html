@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Elena Bubnova</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon_io/favicon.ico" />
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div id="header-main" class="mx-10 mt-10 flex justify-between header header-white mb-[120px]"></div>
+	</header>
+
+	<section class="section-desc">
+		<div class="header header-white"></div>
+	</section>
+
+	<div id="chat-ai"></div>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[840px] mx-auto transition-all duration-100 ease-in-out">
+
+		<section class="max-w-[640px] mb-[120px]">
+			<h1 class="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-5">
+				Personal AI Assistant
+			</h1>
+			<div class="w-full sm:w-8/12 md:w-8/12 lg:w-6/12">
+				<p>My Role: Product Designer</p>
+				<p class="mt-4">Agentic ecosystem — AI-native personal assistant dashboard, moving Gemini from reactive chat to proactive agentic life management.</p>
+			</div>
+		</section>
+
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h3 class="text-2xl font-medium mb-2">Overview</h3>
+			<p class="mb-10">
+				While Gemini Free offers powerful AI capabilities, users must still manually orchestrate search, reasoning, tools, and workflows to complete many tasks. This capstone explores a redesigned Gemini experience that shifts from a reactive conversational model to a proactive agent — reducing cognitive load through automation, contextual guidance, and intelligent task execution while keeping users in control.
+			</p>
+		</section>
+
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h2 class="text-4xl font-medium mb-2">AI Audit + Mode Map</h2>
+			<h3 class="text-2xl font-medium mb-2">Product context</h3>
+			<p class="mb-10">
+				AI-native concept product. Target user: a busy parent juggling work, family, appointments, and daily decisions who wants an AI assistant that proactively helps them — not one that waits for prompts.
+			</p>
+			<h3 class="text-2xl font-medium mb-2">Features audited</h3>
+			<ol class="list-decimal ml-5 mb-10 space-y-4">
+				<li>
+					<p><strong>Search &amp; Research a purchase decision</strong> (Active) — Users ask Gemini to compare products or recommend options, but still spend time verifying details and opening comparison sites. Failure: asking for the best 32" IPS monitor under $500 returns options similar to semantic search, lacking confidence and clear trade-offs.</p>
+				</li>
+				<li>
+					<p><strong>"Plan my day" from scattered information</strong> (Collaborative) — Gemini can organize tasks when prompted, but lacks awareness of calendar, email, and priorities unless explicitly provided. Failure: a generated schedule conflicts with an existing calendar event.</p>
+				</li>
+				<li>
+					<p><strong>Using Gems and workflows</strong> (Collaborative) — Advanced functionality exists through Gems and extensions, but users must learn product architecture before receiving value. Failure: planning a family trip requires guessing whether to use Search, Deep Research, a Gem, or Maps integration.</p>
+				</li>
+				<li>
+					<p><strong>Managing life through conversation</strong> (Collaborative → Agentic) — Gemini waits for instructions; every task starts with a prompt. Failure: dinner ideas, grocery shopping, and a busy evening are treated as separate conversations rather than one connected plan.</p>
+				</li>
+			</ol>
+			<h3 class="text-2xl font-medium mb-2">Trajectory</h3>
+			<p class="mb-10">
+				The product sits between Active and Collaborative today, heading toward Agentic execution — where Gemini takes ownership of multi-step outcomes (e.g., weekly dinner planning based on budget, dietary preferences, and allergies) while users retain approval over spending and major decisions.
+			</p>
+		</section>
+
+		<div class="w-full px-0 mb-10 space-y-10">
+
+			<div class="border border-gray-200 rounded-xl p-6 sm:p-8 bg-white shadow-sm">
+				<h3 class="text-xl font-semibold mb-6">Mode Map</h3>
+
+				<div class="grid grid-cols-2 sm:grid-cols-4 rounded-lg overflow-hidden text-center text-sm font-medium text-white mb-2">
+					<div class="bg-sky-400 py-2.5 px-2">Passive</div>
+					<div class="bg-emerald-500 py-2.5 px-2">Active</div>
+					<div class="bg-amber-400 py-2.5 px-2 text-gray-900">Collaborative</div>
+					<div class="bg-fuchsia-500 py-2.5 px-2">Agentic</div>
+				</div>
+
+				<div class="relative flex items-center justify-between text-xs text-gray-500 mb-8 px-1">
+					<span class="max-w-[40%] leading-snug">more deterministic / less autonomy</span>
+					<div class="hidden sm:block absolute left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] h-px bg-gray-300 top-1/2 -z-10"></div>
+					<span class="text-gray-400 hidden sm:block" aria-hidden="true">→</span>
+					<span class="max-w-[40%] text-right leading-snug">more probabilistic / more autonomy</span>
+				</div>
+
+				<div class="overflow-x-auto">
+					<table class="w-full min-w-[520px] text-sm border-separate border-spacing-y-2">
+						<thead>
+							<tr class="text-left text-gray-600">
+								<th class="font-medium pb-1 pr-3 w-[38%]">Feature</th>
+								<th class="font-medium pb-1 pr-3 w-[22%]">Position on spectrum</th>
+								<th class="font-medium pb-1 w-[40%]">Trajectory → where is it heading?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Product research</span></td>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Active</span></td>
+								<td><span class="block bg-gray-100 rounded-lg px-3 py-2">Active → Collaborative</span></td>
+							</tr>
+							<tr>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Day planning</span></td>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Collaborative</span></td>
+								<td><span class="block bg-gray-100 rounded-lg px-3 py-2">Collaborative → Agentic</span></td>
+							</tr>
+							<tr>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Gems &amp; workflows</span></td>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Collaborative</span></td>
+								<td><span class="block bg-gray-100 rounded-lg px-3 py-2">Active → Collaborative</span></td>
+							</tr>
+							<tr>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Life management through conversation</span></td>
+								<td class="pr-3"><span class="block bg-gray-100 rounded-lg px-3 py-2">Collaborative</span></td>
+								<td><span class="block bg-gray-100 rounded-lg px-3 py-2">Collaborative → Agentic</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="border border-gray-200 rounded-xl p-6 sm:p-8 bg-white shadow-sm">
+				<h3 class="text-xl font-semibold mb-4">Main feature</h3>
+				<div class="bg-gray-100 rounded-lg px-4 py-4 text-sm leading-relaxed text-gray-800">
+					I'm focusing on <strong>Life Management Through Conversation</strong> because it exposes the fundamental limitation of today's chat-based AI products: users must continuously drive the interaction. People don't want better prompting; they want progress toward their goals. The most interesting design challenge is determining how an AI can proactively manage tasks, decisions, and workflows across a user's day without becoming intrusive, unpredictable, or removing the user's sense of control.
+				</div>
+			</div>
+
+		</div>
+
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h2 class="text-4xl font-medium mb-2">Pattern / Content / Prompt Map</h2>
+			<h3 class="text-2xl font-medium mb-2">Pattern map — Hawaii travel workflow</h3>
+			<ol class="list-decimal ml-5 mb-10 space-y-3">
+				<li><p>User clicks "+" to create a new project → <strong>Explicit Invocation</strong></p></li>
+				<li><p>User types a prompt → <strong>Ambient Suggestion</strong> (sentence completions and workflow templates)</p></li>
+				<li><p>User sees the AI-generated workflow and can modify, delete, or run it → <strong>Intent Preview / Action Audit / Confidence Signal</strong></p></li>
+				<li><p>AI provides options, analytics, and asks for next steps → <strong>Explainable Rationale</strong></p></li>
+				<li><p>User confirms booking/payment → <strong>Autonomy Dial</strong></p></li>
+				<li><p>AI offers to save the workflow as a reusable template → <strong>Delegative Assignment</strong></p></li>
+			</ol>
+			<h3 class="text-2xl font-medium mb-2">Sample AI responses</h3>
+			<ul class="list-disc ml-5 mb-10 space-y-4">
+				<li>
+					<p><strong>Successful:</strong> "Found 3 options. Option 2 saves $320 and matches your usual preferences. Ready to book after approval."</p>
+				</li>
+				<li>
+					<p><strong>Uncertain:</strong> "Prices are changing quickly. I'm most confident in Option 2, but availability may change before booking."</p>
+				</li>
+				<li>
+					<p><strong>Declining:</strong> "I can't complete the booking without payment approval. I can save this trip or continue searching."</p>
+				</li>
+			</ul>
+			<h3 class="text-2xl font-medium mb-2">System prompt sketch</h3>
+			<p class="mb-10">
+				You are Virgo, a proactive travel planning assistant. Help users plan and book trips by understanding their budget, travel preferences, family members, kids, pets, loyalty programs, schedules, and previous travel behavior. Explain major decisions before taking action and require approval before spending money or making reservations. When information is uncertain, communicate confidence levels clearly. Prioritize saving users time while maintaining transparency and user control. Never invent prices, availability, or reservations.
+			</p>
+
+			<h3 class="text-2xl font-medium mb-2">Predicted failure modes</h3>
+			<p class="text-sm text-gray-500 italic mb-6">Weak: "it might hallucinate." Strong: name a plausible input that breaks it, or a value conflict the prompt doesn't resolve.</p>
+
+			<div class="space-y-4 mb-10">
+				<div>
+					<p class="text-sm font-semibold text-red-500 mb-2">Failure mode 1</p>
+					<div class="border border-fuchsia-200 bg-fuchsia-50/40 rounded-lg px-4 py-3 text-sm leading-relaxed">
+						The user asks for the cheapest possible trip but previously expressed a preference for direct flights and seats choice. The AI may prioritize one goal without clearly explaining the trade-off.
+					</div>
+				</div>
+				<div>
+					<p class="text-sm font-semibold text-red-500 mb-2">Failure mode 2</p>
+					<div class="border border-fuchsia-200 bg-fuchsia-50/40 rounded-lg px-4 py-3 text-sm leading-relaxed">
+						The AI creates an itinerary based on flights or hotels that become unavailable before booking. The plan appears complete, but execution fails when reservations are attempted.
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="w-full px-0 mb-10">
+			<h3 class="text-2xl font-medium mb-4">Dashboard / Life Management feature, booking trip flow</h3>
+			<img class="shadow-lg w-full" src="assets/img/virgo_dashboard/02_pattern_map_wireframes.webp" alt="Pattern map wireframes — dashboard and travel workflow" />
+		</div>
+
+	</section>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[840px] mx-auto transition-all duration-100 ease-in-out">
+
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h2 class="text-4xl font-medium mb-2">Trust + Eval Audit</h2>
+			<h3 class="text-2xl font-medium mb-2">Five-pillar audit</h3>
+			<p class="mb-6">
+				Structured evaluation across explainability, fairness, robustness, privacy, and transparency — each scored 1–5 with observable moments, not adjectives.
+			</p>
+			<ul class="list-disc ml-5 mb-10 space-y-3">
+				<li><p><strong>Explainability (3/5):</strong> Added AI characters and a color system separating AI from user actions. Users may still not know what the AI can do, what requires approval, or which external data sources are involved.</p></li>
+				<li><p><strong>Fairness (3/5):</strong> Agent should explicitly surface trade-offs (e.g., budget vs. child comfort) and explain whose interests are being optimized.</p></li>
+				<li><p><strong>Robustness (4/5):</strong> System includes escalation to manual review, editable steps, and graceful degradation when data sources fail. Would add retry search.</p></li>
+				<li><p><strong>Privacy:</strong> Ecosystem includes connected apps with on/off access, memory retention settings, and payment approvals.</p></li>
+				<li><p><strong>Transparency:</strong> Added "Sources" for visibility; would add a pop-up with full workflow details to avoid creating noise while maintaining full visibility.</p></li>
+			</ul>
+		</section>
+
+	</section>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[1400px] mx-auto transition-all duration-100 ease-in-out mb-10">
+		<img class="w-full" src="assets/img/virgo_dashboard/05_five_pillar_audit.webp" alt="Five-pillar trust audit scores and observations" />
+	</section>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[1400px] mx-auto transition-all duration-100 ease-in-out mb-10">
+		<img class="w-full" src="assets/img/virgo_dashboard/eval_plan.webp" alt="Eval plan — rubric, golden set, and regression criteria" />
+	</section>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[840px] mx-auto transition-all duration-100 ease-in-out">
+
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h3 class="text-2xl font-medium mb-2">Trust progression</h3>
+			<ol class="list-decimal ml-5 mb-10 space-y-4">
+				<li>
+					<p><strong>Level 1 — Search &amp; recommend:</strong> User connects Gmail and Calendar. Agent explains: "I can suggest flights using your schedule, travel history, and preferences. I will not book anything without approval." Trust: search, recommendation — no autonomous execution.</p>
+				</li>
+				<li>
+					<p><strong>Level 2 — Limited autonomy:</strong> After successful bookings, user can allow "Book flights automatically under $500." New surfaces: family travel preferences, preferred airports, loyalty optimization. Trust: user-defined spending thresholds.</p>
+				</li>
+				<li>
+					<p><strong>Level 3 — Earned autonomy:</strong> Agent proactively suggests deals and autonomously searches, holds reservations, and coordinates family schedules. Always surfaced: undo booking, privacy controls, spending limits, and reasoning audit trail.</p>
+				</li>
+			</ol>
+		</section>
+
+	</section>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[1400px] mx-auto transition-all duration-100 ease-in-out mb-10">
+		<img class="w-full" src="assets/img/virgo_dashboard/06_trust_progression.webp" alt="Trust and delegation progression across three levels" />
+	</section>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[840px] mx-auto transition-all duration-100 ease-in-out">
+
+		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
+			<h3 class="text-2xl font-medium mb-2">Accessibility pass</h3>
+			<ul class="list-disc ml-5 mb-10 space-y-3">
+				<li><p><strong>AI-Specific Risk 1:</strong> Screen reader users may miss changing content, such as live price updates.</p></li>
+				<li><p><strong>AI-Specific Risk 2:</strong> Conversational overload — long, paragraph-dense AI justifications create reading barriers for users with dyslexia, ADHD, or cognitive fatigue. Fix: enforce scannable, bulleted rationale by default with optional deep-dive expansion.</p></li>
+			</ul>
+		</section>
+
+	</section>
+
+	<section class="flex px-10 flex-col w-full max-w-full lg:max-w-[1400px] mx-auto transition-all duration-100 ease-in-out mb-10">
+		<img class="shadow-lg w-full" src="assets/img/virgo_dashboard/09_virgo_dashboard.webp" alt="Virgo personal AI assistant dashboard — full product view" />
+	</section>
+
+	<footer class="section-2">
+		<a class="hover:text-fuchsia-600 underline" href="./index.html#portfolio">To projects ></a>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/mailme.js"></script>
+</body>
+
+</html>

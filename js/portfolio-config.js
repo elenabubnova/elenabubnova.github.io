@@ -4,6 +4,12 @@ const portfolioConfig = {
         id: "product-design-section",
         items: [
             {
+                title: "Personal AI Assistant",
+                link: "virgo_dashboard.html",
+                image: "assets/img/virgo_dashboard/virgo_dashboard_main.webp",
+                alt: "Personal AI Assistant"
+            },
+            {
                 title: "BMC HelixGPT (AI)",
                 link: "bmc_helix_gpt.html",
                 image: "assets/img/bmc_helix_gpt/bmc_helix_gpt_main.webp",
