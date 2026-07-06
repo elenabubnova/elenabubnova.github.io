@@ -44,10 +44,30 @@
 			</p>
 		</section>
 
-		<div class="w-full px-0 mb-10">
-			<video class="shadow-lg w-full rounded-[16px]" controls playsinline preload="metadata">
+		<div class="relative w-full px-0 mb-10 overflow-hidden rounded-[16px] shadow-lg" id="virgo-video-wrap">
+			<video id="virgo-overview-video" class="w-full" playsinline preload="metadata"
+				poster="assets/img/virgo_dashboard/proactive_ai_assistant_poster.jpg">
 				<source src="assets/img/virgo_dashboard/Proactive%20AI%20Assistant%20for%20Busy%20Parents.mp4" type="video/mp4" />
 			</video>
+			<button type="button" id="virgo-video-play"
+				class="absolute inset-0 flex items-center justify-center border-0 cursor-pointer bg-transparent"
+				aria-label="Play video">
+				<span class="flex h-16 w-16 items-center justify-center rounded-full bg-[#A982FF] pl-1 text-2xl text-white shadow-[0_10px_28px_rgba(169,130,255,0.55)]">
+					<i class="fa-solid fa-play" aria-hidden="true"></i>
+				</span>
+			</button>
+			<div id="virgo-video-controls" class="virgo-video-controls hidden" aria-hidden="true">
+				<div class="virgo-video-controls__bar">
+					<button type="button" id="virgo-video-toggle" class="virgo-video-controls__btn" aria-label="Pause">
+						<i class="fa-solid fa-pause" aria-hidden="true"></i>
+					</button>
+					<span id="virgo-video-time" class="virgo-video-controls__time">0:00 / 0:00</span>
+					<input type="range" id="virgo-video-scrubber" class="virgo-video-controls__scrubber" min="0" max="1000" value="0" aria-label="Seek" />
+					<button type="button" id="virgo-video-fullscreen" class="virgo-video-controls__btn" aria-label="Full screen">
+						<i class="fa-solid fa-expand" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
 		</div>
 
 		<section class="max-w-[640px] lg:max-w-[540px] px-0 mb-10">
@@ -270,6 +290,115 @@
 	<script src="js/ui.js"></script>
 	<script src="js/chat.js"></script>
 	<script src="js/mailme.js"></script>
+	<script>
+		(function () {
+			const wrap = document.getElementById("virgo-video-wrap");
+			const video = document.getElementById("virgo-overview-video");
+			const playBtn = document.getElementById("virgo-video-play");
+			const controls = document.getElementById("virgo-video-controls");
+			const toggleBtn = document.getElementById("virgo-video-toggle");
+			const timeEl = document.getElementById("virgo-video-time");
+			const scrubber = document.getElementById("virgo-video-scrubber");
+			const fullscreenBtn = document.getElementById("virgo-video-fullscreen");
+
+			if (!video || !playBtn || !controls || !toggleBtn || !timeEl || !scrubber || !fullscreenBtn) {
+				return;
+			}
+
+			let scrubbing = false;
+
+			function formatTime(seconds) {
+				if (!Number.isFinite(seconds)) {
+					return "0:00";
+				}
+
+				const mins = Math.floor(seconds / 60);
+				const secs = Math.floor(seconds % 60);
+				return `${mins}:${String(secs).padStart(2, "0")}`;
+			}
+
+			function updateTime() {
+				timeEl.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+
+				if (!scrubbing && Number.isFinite(video.duration) && video.duration > 0) {
+					scrubber.value = String(Math.round((video.currentTime / video.duration) * 1000));
+				}
+			}
+
+			function setPlayingUi(isPlaying) {
+				toggleBtn.innerHTML = isPlaying
+					? '<i class="fa-solid fa-pause" aria-hidden="true"></i>'
+					: '<i class="fa-solid fa-play pl-0.5" aria-hidden="true"></i>';
+				toggleBtn.setAttribute("aria-label", isPlaying ? "Pause" : "Play");
+			}
+
+			function showControls() {
+				controls.classList.remove("hidden");
+				controls.setAttribute("aria-hidden", "false");
+			}
+
+			function startPlayback() {
+				playBtn.remove();
+				showControls();
+				video.play();
+			}
+
+			playBtn.addEventListener("click", startPlayback);
+
+			toggleBtn.addEventListener("click", function () {
+				if (video.paused) {
+					video.play();
+				} else {
+					video.pause();
+				}
+			});
+
+			video.addEventListener("play", function () {
+				setPlayingUi(true);
+			});
+
+			video.addEventListener("pause", function () {
+				setPlayingUi(false);
+			});
+
+			video.addEventListener("loadedmetadata", updateTime);
+			video.addEventListener("timeupdate", updateTime);
+			video.addEventListener("ended", function () {
+				setPlayingUi(false);
+			});
+
+			scrubber.addEventListener("input", function () {
+				scrubbing = true;
+				if (Number.isFinite(video.duration) && video.duration > 0) {
+					video.currentTime = (Number(scrubber.value) / 1000) * video.duration;
+					updateTime();
+				}
+			});
+
+			scrubber.addEventListener("change", function () {
+				scrubbing = false;
+			});
+
+			fullscreenBtn.addEventListener("click", function () {
+				const target = wrap.requestFullscreen || wrap.webkitRequestFullscreen;
+				if (target) {
+					target.call(wrap);
+				}
+			});
+
+			wrap.addEventListener("click", function (event) {
+				if (event.target !== video || controls.contains(event.target) || playBtn.isConnected) {
+					return;
+				}
+
+				if (video.paused) {
+					video.play();
+				} else {
+					video.pause();
+				}
+			});
+		})();
+	</script>
 </body>
 
 </html>

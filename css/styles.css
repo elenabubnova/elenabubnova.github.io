@@ -470,6 +470,98 @@ video {
 	width: 100%;
 	height: auto;
 	display: block;
+	background: #fff;
+}
+
+.virgo-video-controls {
+	position: absolute;
+	inset: auto 0 0;
+	z-index: 2;
+}
+
+.virgo-video-controls::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 7rem;
+	background: linear-gradient(
+		to top,
+		rgba(169, 130, 255, 0.9) 0%,
+		rgba(179, 142, 255, 0.55) 32%,
+		rgba(179, 142, 255, 0.22) 58%,
+		rgba(179, 142, 255, 0) 100%
+	);
+	pointer-events: none;
+}
+
+.virgo-video-controls__bar {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.75rem 1rem 0.85rem;
+	background: transparent;
+}
+
+.virgo-video-controls__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border: 0;
+	border-radius: 9999px;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	flex-shrink: 0;
+}
+
+.virgo-video-controls__btn:hover {
+	background: rgba(255, 255, 255, 0.16);
+}
+
+.virgo-video-controls__time {
+	color: #fff;
+	font-size: 0.75rem;
+	line-height: 1;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+	flex-shrink: 0;
+}
+
+.virgo-video-controls__scrubber {
+	appearance: none;
+	width: 100%;
+	height: 4px;
+	border-radius: 9999px;
+	background: rgba(255, 255, 255, 0.35);
+	cursor: pointer;
+}
+
+.virgo-video-controls__scrubber::-webkit-slider-thumb {
+	appearance: none;
+	width: 12px;
+	height: 12px;
+	border: 0;
+	border-radius: 9999px;
+	background: #fff;
+}
+
+.virgo-video-controls__scrubber::-moz-range-thumb {
+	width: 12px;
+	height: 12px;
+	border: 0;
+	border-radius: 9999px;
+	background: #fff;
+}
+
+#virgo-video-wrap:fullscreen .virgo-video-controls__bar,
+#virgo-video-wrap:-webkit-full-screen .virgo-video-controls__bar {
+	padding-bottom: 1.25rem;
 }
 
 
